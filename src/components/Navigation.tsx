@@ -10,6 +10,8 @@
  * ---------------------------------------
  */
 
+import Link from "next/link";
+
 export default function Navigation() {
   return (
     <header className="fixed top-0 z-50 w-full">
@@ -22,9 +24,11 @@ export default function Navigation() {
         {/* Directional Structure */}
 
         <nav className="flex items-center gap-8">
-          <button className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-opacity hover:opacity-60 cursor-pointer">
+          <Link
+          href="/builds"
+           className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-opacity hover:opacity-60 cursor-pointer">
             Builds
-          </button>
+          </Link>
 
           <button className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-opacity hover:opacity-60 cursor-pointer">
             Notes
