@@ -41,7 +41,7 @@ export default function HomePage() {
             <h1 className="text-5xl font-light leading-[1.1] tracking-[0.04em] text-neutral-100 md:text-6xl">
               Systems, trust infrastructure,
               <br />
-              software craft, and applied AI.
+              software craft, and architecture.
             </h1>
 
             {/* Orientation */}

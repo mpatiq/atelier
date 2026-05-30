@@ -1,19 +1,17 @@
+import Link from 'next/link';
+
 /**
- * --------------------------------------------------------------------------------
+ * ----------------------------------------------------------------------------
  * Builds Archive
  *
  * Primary outward-facing record of systems,
  * experiments, deployed products, and active work.
- *
- * --------------------------------------------------------------------------------
+ * ----------------------------------------------------------------------------
  */
 
-// ---------------------------------------------------------------------------
-// State Indicator System
-// ---------------------------------------------------------------------------
 const operationalStateStyles = {
-  LIVE: 'bg-emerald-400/70',
-  ACTIVE: 'bg-blue-400/70',
+  OPERATIONAL: 'bg-emerald-400/70',
+  "ACTIVE DEVELOPMENT": 'bg-blue-400/70',
   RESEARCH: 'bg-amber-300/70',
   ARCHIVED: 'bg-neutral-500/70',
 };
@@ -21,17 +19,19 @@ const operationalStateStyles = {
 const builds = [
   {
     name: 'MpatiQ',
-    operationalState: 'LIVE',
+    operationalState: 'OPERATIONAL',
     classification: 'INFRASTRUCTURE',
+    href: '/builds/mpatiq',
 
     description:
-      'Trust infrastructure for preserving and transporting records of lived responsibilty and witnessed conduct.',
+      'Trust infrastructure for preserving and transporting records of responsibility and witnessed conduct.',
   },
 
   {
     name: 'Atelier',
-    operationalState: 'ACTIVE',
+    operationalState: 'ACTIVE DEVELOPMENT',
     classification: 'SYSTEM',
+    href: '/builds/atelier',
 
     description:
       'A living archive for systems work, architectural notes, writings, and technical craft.',
@@ -39,17 +39,19 @@ const builds = [
 
   {
     name: 'MpatiQ — Foundational Surface (2025)',
-    operationalState: 'LIVE',
+    operationalState: 'OPERATIONAL',
     classification: 'FOUNDATIONAL',
+    href: '/builds/mpatiq-foundational-surface-2025',
 
     description:
-      "MpatiQ's earliest outward-facing architectural surface and the beginnings of its trust infrastructure direction.",
+      'The earliest outward-facing architectural surface of MpatiQ and the beginning of its trust infrastructure direction.',
   },
 
   {
     name: 'MpatiQ Constitutional State Machine',
-    operationalState: 'ACTIVE',
+    operationalState: 'ACTIVE DEVELOPMENT',
     classification: 'FOUNDATIONAL',
+    href: '/builds/mpatiq-constitutional-state-machine',
 
     description:
       'Constitutional trust-state infrastructure governing reflection, continuity, and non-reductive trust transitions.',
@@ -57,26 +59,29 @@ const builds = [
 
   {
     name: 'Instant Checkout Link',
-    operationalState: 'ACTIVE',
+    operationalState: 'ACTIVE DEVELOPMENT',
     classification: 'SYSTEM',
+    href: '/builds/instant-checkout-link',
 
     description:
-      'Practical payment and checkout infrastructure designed for fast, direction transaction flow.',
+      'Practical payment and checkout infrastructure designed for fast, direct transaction flow.',
   },
 
   {
     name: 'Nvert',
     operationalState: 'RESEARCH',
     classification: 'SYSTEM',
+    href: '/builds/nvert',
 
     description:
-      'AI-assisted learning and intellectual companionship infrastructure centered on deep exploration and serendipity.',
+      'AI-assisted learning and intellectual companionship infrastructure centered on meaningful knowledge exploration.',
   },
 
   {
     name: 'AshaGuard',
     operationalState: 'RESEARCH',
     classification: 'SYSTEM',
+    href: '/builds/ashaguard',
 
     description:
       'Trust-sensitive behavioral and caregiver insight system exploring early drift detection and reflective AI support.',
@@ -85,7 +90,8 @@ const builds = [
   {
     name: 'E.coli Experiments',
     operationalState: 'RESEARCH',
-    classification: 'SYSTEM',
+    classification: 'EXPERIMENTAL',
+    href: '/builds/e-coli-experiments',
 
     description:
       'Experiments exploring emergent intelligence, optimization behavior, and biased environmental navigation.',
@@ -95,6 +101,7 @@ const builds = [
     name: 'Echeta',
     operationalState: 'RESEARCH',
     classification: 'EXPERIMENTAL',
+    href: '/builds/echeta',
 
     description:
       'A reflective temporal system centered on mortality, urgency, and intentional living.',
@@ -111,54 +118,66 @@ export default function BuildsPage() {
             Builds
           </p>
 
-          <h1 className="text-5xl font-light tracking-[0.04em] text-neutral-100">
+          <h1 className="text-5xl font-light tracking-[-0.04em] text-neutral-100">
             Systems in motion.
           </h1>
         </div>
 
         {/* Build archive */}
         <div className="space-y-6">
-          {builds.map((build) => (
-            <article
-              key={build.name}
-              className="border border-white/5 bg-white/2 px-8 py-10 transition-colors hover:border-white/20 hover:bg-white/5 rounded-sm cursor-pointer"
-            >
-              <div className="mb-6 flex items-center justify-between">
-                {/* Build Identity*/}
-                <div>
-                  <h2 className="text-2xl font-light text-neutral-100">
-                    {build.name}
-                  </h2>
+          {builds.map((build) => {
+            const cardContent = (
+              <>
+                <div className="mb-6 flex items-start justify-between">
+                  {/* Build identity */}
+                  <div>
+                    <h2 className="text-2xl font-light text-neutral-100">
+                      {build.name}
+                    </h2>
 
-                  {/* Build Classification */}
-                  <p className="mt-2 text-xs uppercase tracking-[0.25em] text-neutral-600">
-                    {build.classification}
-                  </p>
+                    <p className="mt-2 text-xs uppercase tracking-[0.25em] text-neutral-600">
+                      {build.classification}
+                    </p>
+                  </div>
+
+                  {/* Operational state + directional cue */}
+                  <div className="flex items-center gap-6">
+                    <div className="flex items-center gap-3">
+                      <div
+                        className={`h-2 w-2 rounded-full ${
+                          operationalStateStyles[
+                            build.operationalState as keyof typeof operationalStateStyles
+                          ]
+                        }`}
+                      />
+
+                      <span className="text-xs uppercase tracking-[0.25em] text-neutral-500">
+                        {build.operationalState}
+                      </span>
+                    </div>
+
+                    <span className="text-lg text-neutral-700 transition-transform duration-300 group-hover:translate-x-1">
+                      →
+                    </span>
+                  </div>
                 </div>
 
-                {/* Operational State */}
-                <div className="flex items-center gap-3">
+                <p className="max-w-3xl leading-relaxed text-neutral-400">
+                  {build.description}
+                </p>
+              </>
+            );
 
-                  {/* Self-closing div of state's color */}
-                  <div
-                    className={`h-2 w-2 rounded-full ${
-                      operationalStateStyles[
-                        build.operationalState as keyof typeof operationalStateStyles
-                      ]
-                    }`}
-                  />
-
-                  <span className="text-xs uppercase tracking-[0.25em] text-neutral-500">
-                    {build.operationalState}
-                  </span>
-                </div>
-              </div>
-
-              <p className="max-w-3xl leading-relaxed text-neutral-400">
-                {build.description}
-              </p>
-            </article>
-          ))}
+            return (
+              <Link
+                key={build.name}
+                href={build.href}
+                className="group block border border-white/5 bg-white/2 px-8 py-10 transition-colors hover:border-white/20 hover:bg-white/5"
+              >
+                {cardContent}
+              </Link>
+            );
+          })}
         </div>
       </section>
     </main>
