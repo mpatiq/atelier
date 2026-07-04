@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 const operationalStateStyles = {
   OPERATIONAL: 'bg-emerald-400/70',
-  "ACTIVE DEVELOPMENT": 'bg-blue-400/70',
+  'ACTIVE DEVELOPMENT': 'bg-blue-400/70',
   RESEARCH: 'bg-amber-300/70',
   ARCHIVED: 'bg-neutral-500/70',
 };
@@ -34,7 +34,7 @@ const builds = [
     href: '/builds/atelier',
 
     description:
-      'A living archive for systems work, architectural notes, writings, and technical craft.',
+      'Living archive for systems work, architectural notes, writings, and technical craft.',
   },
 
   {
@@ -44,7 +44,7 @@ const builds = [
     href: '/builds/mpatiq-foundational-surface-2025',
 
     description:
-      'The earliest outward-facing architectural surface of MpatiQ and the beginning of its trust infrastructure direction.',
+      'Earliest outward-facing architectural surface of MpatiQ and the beginning of its trust infrastructure direction.',
   },
 
   {
@@ -58,23 +58,23 @@ const builds = [
   },
 
   {
-    name: 'Instant Checkout Link',
-    operationalState: 'ACTIVE DEVELOPMENT',
-    classification: 'SYSTEM',
-    href: '/builds/instant-checkout-link',
-
-    description:
-      'Practical payment and checkout infrastructure designed for fast, direct transaction flow.',
-  },
-
-  {
     name: 'Nvert',
     operationalState: 'RESEARCH',
     classification: 'SYSTEM',
     href: '/builds/nvert',
 
     description:
-      'AI-assisted learning and intellectual companionship infrastructure centered on meaningful knowledge exploration.',
+      'Learning and intellectual companionship system centered on meaningful knowledge exploration, and serendipitous discovery.',
+  },
+
+  {
+    name: 'Instant Checkout Link',
+    operationalState: 'ACTIVE DEVELOPMENT',
+    classification: 'INFRASTRUCTURE',
+    href: '/builds/instant-checkout-link',
+
+    description:
+      'Payment and checkout infrastructure designed for fast, direct transaction flow.',
   },
 
   {
@@ -104,7 +104,7 @@ const builds = [
     href: '/builds/echeta',
 
     description:
-      'A reflective temporal system centered on mortality, urgency, and intentional living.',
+      'Reflective time system centered on mortality, urgency, and intentional living.',
   },
 ];
 

@@ -1,50 +1,43 @@
 import BuildPortal from '@/components/BuildPortal';
 /**
  * -----------------------------------------------------------------------------------
- * MpatiQ
+ * Nvert
  *
- * Trust infrastructure for preserving and transporting records of lived responsibility
- * and witnessed conduct.
+ * A learning and collaboration system exploring how meaningful learning relationships might emerge through shared curiosity, serendipity, sustained exploration, and intellectual companionship.
  *
- * -------------------------------------------------------------------------------------
+ * -----------------------------------------------------------------------------------
  */
 
-export default function MpatiQPage() {
+export default function Nvert() {
   return (
     <main className="min-h-screen px-8 pb-32 pt-40">
       <section className="mx-auto max-w-5xl">
         {/* Build Identity */}
         <div className="mb-24">
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-neutral-500">
-            Infrastructure
+            System
           </p>
 
-          <h1 className="font-light text-5xl tracking-[0.04em]">MpatiQ</h1>
+          <h1 className="font-light text-5xl tracking-[0.04em]">Nvert</h1>
 
           <p className="mt-8 text-lg max-w-3xl leading-relaxed text-neutral-400">
-            Trust infrastructure for preserving and transporting records of
-            lived responsibility and witnessed conduct across jobs, communities,
-            and platforms.
+            Learning system for fostering intellectual companionship,
+            serendipitous discovery, and meaningful knowledge exploration.
           </p>
         </div>
 
         <BuildPortal
-          title="MpatiQ"
-          image="/previews/mpatiq-portal3.png"
-          surfaceHref="https://www.mpatiq.com"
-          operationalState="OPERATIONAL"
-          statusColor="bg-emerald-400/70"
-          classification="TRUST INFRASTRUCTURE"
+          title="Nvert"
+          image="/previews/nvert.png"
+          surfaceHref="https://nvert-revamp.web.app/"
+          operationalState="RESEARCH"
+          statusColor="bg-amber-300/70"
+          classification="LEARNING SYSTEM"
           codeAccess="PRIVATE PROPRIETARY"
           actions={[
             {
               label: 'Visit',
-              href: 'https://www.mpatiq.com',
-            },
-
-            {
-              label: 'Organization',
-              href: 'https://github.com/mpatiq',
+              href: 'https://nvert-revamp.web.app/',
             },
           ]}
         />
@@ -57,22 +50,12 @@ export default function MpatiQPage() {
           </p>
           <div className="max-w-3xl space-y-6 text-neutral-300">
             <p className="leading-relaxed">
-              Much of human trust is experienced, witnessed, and remembered, yet
-              rarely preserved in structures that people can carry forward,
-              across communities, opportunities, and systems.
-            </p>
-
-            <p className="leading-relaxed">
-              A caregiver may become deeply trusted by families and remain
-              invisible outside those relationships. A tradesperson may spend
-              years earning confidence through consistency, skill, and care,
-              only to begin again whenever context changes.
-            </p>
-
-            <p className="leading-relaxed">
-              MpatiQ explores how lived responsibility and witnessed conduct can
-              become transportable without reducing people to scores, rankings,
-              follower counts, or engagement metrics.
+              Nvert began as an exploration of a simple question: how might
+              people pursuing difficult paths find meaningful intellectual
+              companionship without relying on chance? The project explores
+              structures for learning together, matching curiosities across
+              disciplines, and creating environments where exploration could
+              become shared in resonance.
             </p>
           </div>
         </section>
@@ -84,85 +67,89 @@ export default function MpatiQPage() {
             System Principles
           </p>
           <div className="space-y-4 text-neutral-300">
-            <p>Trust is infrastructure.</p>
-            <p>Structure without reduction.</p>
-            <p>Witness over aggregation.</p>
-            <p>Context over compression.</p>
-            <p>Continuity over performance.</p>
-            <p>History should be preserved, not optimized.</p>
+            <p>Curiousity deserves structure.</p>
+            <p>Depth matters more than volume.</p>
+            <p>Serendipity should be cultivated.</p>
+            <p>Learning is relational.</p>
+            <p>Resonant companionship can accelerate growth.</p>
           </div>
         </section>
 
         {/* Architectural Notes */}
         <section className="mb-24">
-          {/* Foundational Structures within MpatiQ */}
+          {/* Foundational Structures within Instant Checkout Link */}
           <p className="mb-8 text-sm uppercase tracking-[0.3em] text-neutral-500">
             Architectural Notes
           </p>
 
           <div className="space-y-10">
-            {/* Constitutional Trust State Machine */}
             <div>
-              <h3 className="text-lg text-neutral-200">
-                Constitutional Trust State Machine
+              {/* Intellectual Companionship Systems */}
+              <h3 className="text-neutral-200 text-lg">
+                Intellectual Companionship Systems
               </h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                The governing trust-state transitions underlying MpatiQ.
+                Structures for helping Nverters find resonant collaboration
+                within and across disciplines.
               </p>
             </div>
 
-            {/* Claims and Reflection Infrastructure */}
+            {/* Matching System Foundations */}
             <div>
               <h3 className="text-lg text-neutral-200">
-                Claims and Reflection Infrastructure
+                Matching System Foundations
               </h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                How claims become witnessed records of conduct.
+                Explorations into compatibility, interests, motivation, and
+                learning styles.
               </p>
             </div>
 
-            {/* Trust Domains and Passports */}
-            <div>
-              <h3 className="text-lg text-neutral-200">Trust Domains</h3>
-
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Context-specific trust representation without scoring.
-              </p>
-            </div>
-
-            {/* Witness Reflection Architecture */}
+            {/* Study Room Architecture */}
             <div>
               <h3 className="text-lg text-neutral-200">
-                Witness Reflection Architecture
+                Study Room Architecture
               </h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Structured observation anchored to lived experience.
+                Shared environments designed to support focused exploration.
               </p>
             </div>
 
-            {/* Dormancy and Continuity Preservation */}
+            {/* Profile and Identity Modeling */}
+            <div>
+              <h3 className="text-lg text-neutral-200">
+                Learning Context Modeling
+              </h3>
+
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
+                Structuring the signals needed for meaningful matching and
+                exploration.
+              </p>
+            </div>
+
+            {/* Structured Serendipity */}
+            <div>
+              <h3 className="text-lg text-neutral-200">
+                Structured Serendipity
+              </h3>
+
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
+                Designing systems that encourage valuable unexpected encounters.
+              </p>
+            </div>
+
+            {/* Exploration Continuity */}
             <div>
               <h3 className="text-neutral-200 text-lg">
-                Dormancy and Continuity Preservation
+                Exploration Continuity
               </h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Preserving history without forcing perpetual activity.
-              </p>
-            </div>
-
-            {/* Trust Portability Across Contexts */}
-            <div>
-              <h3 className="text-neutral-200 text-lg">
-                Trust Portability Across Contexts
-              </h3>
-
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Helping trust travel beyond the systems and environments that
-                created it.
+                Understanding learning as an ongoing journey rather than
+                isolated sessions.
               </p>
             </div>
           </div>
@@ -179,26 +166,24 @@ export default function MpatiQPage() {
             {/* Systems */}
             <div className="space-y-2">
               <p>Systems Design</p>
-              <p>Trust Architecture</p>
+              <p>Matching Systems</p>
+              <p>Learning Systems</p>
             </div>
 
-            {/* Writing & Ontology */}
+            {/* Design */}
             <div className="mt-10 space-y-2">
-              <p>Naming & Ontology Design</p>
-              <p>Domain-Driven Design</p>
-            </div>
-
-            {/* Research */}
-            <div className="mt-10 space-y-2">
-              <p>Writing</p>
-              <p>Research & Analysis</p>
+              <p>Human-Centered Design</p>
             </div>
 
             {/* Engineering */}
             <div className="mt-10 space-y-2">
-              <p>Data Modeling</p>
               <p>Product Engineering</p>
               <p>Full Stack Development</p>
+            </div>
+
+            {/* Research & Analysis */}
+            <div className="mt-10 space-y-2">
+              <p>Research & Analysis</p>
             </div>
           </div>
         </section>
@@ -217,9 +202,9 @@ export default function MpatiQPage() {
               </h3>
 
               <div className="space-y-2 text-neutral-300">
-                <p>TypeScript</p>
+                <p>JavaScript</p>
                 <p>React</p>
-                <p>Next.js</p>
+                <p>Vite</p>
               </div>
             </div>
 
@@ -241,21 +226,23 @@ export default function MpatiQPage() {
               </h3>
 
               <div className="space-y-2 text-neutral-300">
-                <p>Prisma</p>
-                <p>Supabase</p>
+                <p>Firebase</p>
+                <p>Firestore</p>
               </div>
             </div>
 
-            {/* Communication */}
+            {/* Identity */}
             <div>
-              <h3 className="mb-3 text-sm uppercase tracking-[0.2em] text-neutral-600">
-                Communication
+              <h3 className="mb-3 text-sm uppercase tracking-[0.2em] text-neutral-600 ">
+                Identity
               </h3>
 
               <div className="space-y-2 text-neutral-300">
-                <p>Resend</p>
+                <p>Firebase Authentication</p>
               </div>
             </div>
+
+    
 
             {/* Deployment */}
             <div>
@@ -264,18 +251,7 @@ export default function MpatiQPage() {
               </h3>
 
               <div className="space-y-2 text-neutral-300">
-                <p>Vercel</p>
-              </div>
-            </div>
-
-            {/* Quality Assurance */}
-            <div>
-              <h3 className="text-neutral-600 uppercase tracking-[0.2em] mb-3 text-sm">
-                Quality Assurance
-              </h3>
-
-              <div className="space-y-2 text-neutral-300">
-                <p>Jest</p>
+                <p>Firebase Hosting</p>
               </div>
             </div>
 

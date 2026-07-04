@@ -1,15 +1,15 @@
 import BuildPortal from '@/components/BuildPortal';
 /**
  * -----------------------------------------------------------------------------------
- * MpatiQ
- *
- * Trust infrastructure for preserving and transporting records of lived responsibility
- * and witnessed conduct.
+ * Instant Checkout Link
+ * 
+ * Commerce infrastructure for creating, sharing,
+ * and tracking payment links without a storefront.
  *
  * -------------------------------------------------------------------------------------
  */
 
-export default function MpatiQPage() {
+export default function InstantCheckoutLink() {
   return (
     <main className="min-h-screen px-8 pb-32 pt-40">
       <section className="mx-auto max-w-5xl">
@@ -19,32 +19,28 @@ export default function MpatiQPage() {
             Infrastructure
           </p>
 
-          <h1 className="font-light text-5xl tracking-[0.04em]">MpatiQ</h1>
+          <h1 className="font-light text-5xl tracking-[0.04em]">
+            Instant Checkout Link
+          </h1>
 
           <p className="mt-8 text-lg max-w-3xl leading-relaxed text-neutral-400">
-            Trust infrastructure for preserving and transporting records of
-            lived responsibility and witnessed conduct across jobs, communities,
-            and platforms.
+            Payment-link infrastructure for generating and sharing instant
+            checkout experiences without custom storefronts.
           </p>
         </div>
 
         <BuildPortal
-          title="MpatiQ"
-          image="/previews/mpatiq-portal3.png"
-          surfaceHref="https://www.mpatiq.com"
-          operationalState="OPERATIONAL"
-          statusColor="bg-emerald-400/70"
-          classification="TRUST INFRASTRUCTURE"
-          codeAccess="PRIVATE PROPRIETARY"
+          title="Instant Checkout Link"
+          image="/previews/instant-checkout-link3.png"
+          surfaceHref="https://github.com/UruBuilds/instant-checkout-link"
+          operationalState="ACTIVE DEVELOPMENT"
+          statusColor="bg-blue-400/70"
+          classification="COMMERCE SYSTEM"
+          codeAccess="SOURCE CODE AVAILABLE"
           actions={[
             {
-              label: 'Visit',
-              href: 'https://www.mpatiq.com',
-            },
-
-            {
-              label: 'Organization',
-              href: 'https://github.com/mpatiq',
+              label: 'Codebase',
+              href: 'https://github.com/UruBuilds/instant-checkout-link',
             },
           ]}
         />
@@ -57,22 +53,19 @@ export default function MpatiQPage() {
           </p>
           <div className="max-w-3xl space-y-6 text-neutral-300">
             <p className="leading-relaxed">
-              Much of human trust is experienced, witnessed, and remembered, yet
-              rarely preserved in structures that people can carry forward,
-              across communities, opportunities, and systems.
+              Instant Checkout Link sets out to reduce transactional friction.
             </p>
 
             <p className="leading-relaxed">
-              A caregiver may become deeply trusted by families and remain
-              invisible outside those relationships. A tradesperson may spend
-              years earning confidence through consistency, skill, and care,
-              only to begin again whenever context changes.
+              It provides a way for merchants to move from intent to transaction
+              with minimal ceremony.
             </p>
 
             <p className="leading-relaxed">
-              MpatiQ explores how lived responsibility and witnessed conduct can
-              become transportable without reducing people to scores, rankings,
-              follower counts, or engagement metrics.
+              Rather than requiring a custom storefront or complex setup, the
+              system centers the checkout experience itself, allowing products
+              and services to become directly purchasable through shareable
+              payment surfaces.
             </p>
           </div>
         </section>
@@ -84,85 +77,85 @@ export default function MpatiQPage() {
             System Principles
           </p>
           <div className="space-y-4 text-neutral-300">
-            <p>Trust is infrastructure.</p>
-            <p>Structure without reduction.</p>
-            <p>Witness over aggregation.</p>
-            <p>Context over compression.</p>
-            <p>Continuity over performance.</p>
-            <p>History should be preserved, not optimized.</p>
+            <p>Reduce friction.</p>
+            <p>Shorten the path from intent to action.</p>
+            <p>Make payment portable.</p>
+            <p>Preserve clarity.</p>
+            <p>Keep complexity behind the surface.</p>
           </div>
         </section>
 
         {/* Architectural Notes */}
         <section className="mb-24">
-          {/* Foundational Structures within MpatiQ */}
+          {/* Foundational Structures within Instant Checkout Link */}
           <p className="mb-8 text-sm uppercase tracking-[0.3em] text-neutral-500">
             Architectural Notes
           </p>
 
           <div className="space-y-10">
-            {/* Constitutional Trust State Machine */}
             <div>
-              <h3 className="text-lg text-neutral-200">
-                Constitutional Trust State Machine
+              {/* Checkout Link Generation */}
+              <h3 className="text-neutral-200 text-lg">
+                Checkout Link Generation
               </h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                The governing trust-state transitions underlying MpatiQ.
+                Creating portable payment surfaces.
               </p>
             </div>
 
-            {/* Claims and Reflection Infrastructure */}
+            {/* Product Configuration Model */}
             <div>
               <h3 className="text-lg text-neutral-200">
-                Claims and Reflection Infrastructure
+                Product Configuration Model
               </h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                How claims become witnessed records of conduct.
+                Defining purchasable offerings and metadata.
               </p>
             </div>
 
-            {/* Trust Domains and Passports */}
-            <div>
-              <h3 className="text-lg text-neutral-200">Trust Domains</h3>
-
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Context-specific trust representation without scoring.
-              </p>
-            </div>
-
-            {/* Witness Reflection Architecture */}
+            {/* Payment Flow Architecture */}
             <div>
               <h3 className="text-lg text-neutral-200">
-                Witness Reflection Architecture
+                Payment Flow Architecture
               </h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Structured observation anchored to lived experience.
+                Managing transitions from link to transaction.
               </p>
             </div>
 
-            {/* Dormancy and Continuity Preservation */}
+            {/* Merchant Surface Design */}
+            <div>
+              <h3 className="text-lg text-neutral-200">
+                Merchant Surface Design
+              </h3>
+
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
+                Presenting products with minimal friction.
+              </p>
+            </div>
+
+            {/* Link Distribution Model */}
+            <div>
+              <h3 className="text-lg text-neutral-200">
+                Link Distribution Model
+              </h3>
+
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
+                Enabling checkout portability across channels.
+              </p>
+            </div>
+
+            {/* Transaction Completion Flow */}
             <div>
               <h3 className="text-neutral-200 text-lg">
-                Dormancy and Continuity Preservation
+                Transaction Completion Flow
               </h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Preserving history without forcing perpetual activity.
-              </p>
-            </div>
-
-            {/* Trust Portability Across Contexts */}
-            <div>
-              <h3 className="text-neutral-200 text-lg">
-                Trust Portability Across Contexts
-              </h3>
-
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Helping trust travel beyond the systems and environments that
-                created it.
+                Handling successful and failed payment outcomes.
               </p>
             </div>
           </div>
@@ -179,24 +172,21 @@ export default function MpatiQPage() {
             {/* Systems */}
             <div className="space-y-2">
               <p>Systems Design</p>
-              <p>Trust Architecture</p>
+              <p>Payments Architecture</p>
             </div>
 
-            {/* Writing & Ontology */}
+            {/* Research & Analysis */}
             <div className="mt-10 space-y-2">
-              <p>Naming & Ontology Design</p>
-              <p>Domain-Driven Design</p>
-            </div>
-
-            {/* Research */}
-            <div className="mt-10 space-y-2">
-              <p>Writing</p>
               <p>Research & Analysis</p>
+            </div>
+
+            <div className="mt-10 space-y-2">
+              <p>Payments Infrastructure</p>
+              <p>Financial Systems Design</p>
             </div>
 
             {/* Engineering */}
             <div className="mt-10 space-y-2">
-              <p>Data Modeling</p>
               <p>Product Engineering</p>
               <p>Full Stack Development</p>
             </div>
@@ -246,25 +236,25 @@ export default function MpatiQPage() {
               </div>
             </div>
 
-            {/* Communication */}
+            {/* External Services */}
             <div>
-              <h3 className="mb-3 text-sm uppercase tracking-[0.2em] text-neutral-600">
-                Communication
+              <h3 className="mb-3 text-sm uppercase tracking-[0.2em] text-neutral-600 ">
+                External Services
               </h3>
 
               <div className="space-y-2 text-neutral-300">
-                <p>Resend</p>
+                <p>Stripe API</p>
               </div>
             </div>
 
-            {/* Deployment */}
+            {/* Events Infrastructure */}
             <div>
-              <h3 className="text-neutral-600 uppercase tracking-[0.2em] mb-3 text-sm">
-                Deployment
+              <h3 className="mb-3 text-sm uppercase tracking-[0.2em] text-neutral-600 ">
+                Events Infrastructure
               </h3>
 
               <div className="space-y-2 text-neutral-300">
-                <p>Vercel</p>
+                <p>Stripe Webhooks</p>
               </div>
             </div>
 
@@ -276,6 +266,17 @@ export default function MpatiQPage() {
 
               <div className="space-y-2 text-neutral-300">
                 <p>Jest</p>
+              </div>
+            </div>
+
+            {/* Deployment */}
+            <div>
+              <h3 className="text-neutral-600 uppercase tracking-[0.2em] mb-3 text-sm">
+                Deployment
+              </h3>
+
+              <div className="space-y-2 text-neutral-300">
+                <p>Vercel</p>
               </div>
             </div>
 

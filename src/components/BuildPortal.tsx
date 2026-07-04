@@ -32,6 +32,8 @@ type BuildPortalProps = {
   codeAccess: string;
 
   actions: BuildAction[];
+
+  imageObjectPosition?: string;
 };
 
 export default function BuildPortal({
@@ -43,6 +45,7 @@ export default function BuildPortal({
   classification,
   codeAccess,
   actions,
+  imageObjectPosition,
 }: BuildPortalProps) {
   return (
     <section className="mb-24">
@@ -59,6 +62,11 @@ export default function BuildPortal({
                 src={image}
                 alt={`${title} live surface preview`}
                 fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 70vw"
+                style={{
+                  objectPosition: imageObjectPosition ?? 'center',
+                }}
                 className="object-cover opacity-90 transition-all duration-500 group-hover:scale-[1.01] group-hover:opacity-100"
               />
             </div>

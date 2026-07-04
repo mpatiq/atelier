@@ -3,51 +3,66 @@ import BuildPortal from '@/components/BuildPortal';
  * -----------------------------------------------------------------------------------
  * MpatiQ
  *
- * Trust infrastructure for preserving and transporting records of lived responsibility
- * and witnessed conduct.
+ * Foundations into how trust, reputation, and lived responsibility would be        represented beyond profiles, scores, and traditional credentials.
  *
  * -------------------------------------------------------------------------------------
  */
 
-export default function MpatiQPage() {
+export default function MpatiQFoundationalPage() {
   return (
     <main className="min-h-screen px-8 pb-32 pt-40">
       <section className="mx-auto max-w-5xl">
         {/* Build Identity */}
         <div className="mb-24">
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-neutral-500">
-            Infrastructure
+            Foundational
           </p>
 
-          <h1 className="font-light text-5xl tracking-[0.04em]">MpatiQ</h1>
+          <h1 className="font-light text-5xl tracking-[0.04em]">
+            MpatiQ — Foundational Surface (2025)
+          </h1>
 
           <p className="mt-8 text-lg max-w-3xl leading-relaxed text-neutral-400">
-            Trust infrastructure for preserving and transporting records of
-            lived responsibility and witnessed conduct across jobs, communities,
-            and platforms.
+            The earliest outward-facing architectural surface of MpatiQ and the
+            beginning of its trust infrastructure direction.
           </p>
         </div>
 
         <BuildPortal
-          title="MpatiQ"
-          image="/previews/mpatiq-portal3.png"
+          title="MpatiQ (2025)"
+          image="/previews/mpatiq-foundational2.png"
           surfaceHref="https://www.mpatiq.com"
           operationalState="OPERATIONAL"
           statusColor="bg-emerald-400/70"
-          classification="TRUST INFRASTRUCTURE"
-          codeAccess="PRIVATE PROPRIETARY"
+          classification="FOUNDATIONAL"
+          codeAccess="OPEN SOURCE"
           actions={[
             {
               label: 'Visit',
-              href: 'https://www.mpatiq.com',
+              href: 'https://origin.mpatiq.com/',
             },
 
             {
-              label: 'Organization',
-              href: 'https://github.com/mpatiq',
+              label: 'Codebase',
+              href: 'https://github.com/mpatiq/mpatiq-foundational-surface',
             },
           ]}
         />
+
+        {/* Historical Context */}
+        <section className="mb-24">
+          <p className="mb-6 text-sm uppercase tracking-[0.3em] text-neutral-500">
+            Historical Context
+          </p>
+          <div className="max-w-3xl text-neutral-300">
+            <p className="leading-relaxed">
+              Built in 2025, this surface represents the first public
+              articulation of MpatiQ's direction. While the system has evolved
+              substantially since then, this artifact remains an important
+              record of its emergence, premise, and early language.
+            </p>
+          </div>
+        </section>
 
         {/* Core thesis */}
         <section className="mb-24">
@@ -57,22 +72,28 @@ export default function MpatiQPage() {
           </p>
           <div className="max-w-3xl space-y-6 text-neutral-300">
             <p className="leading-relaxed">
-              Much of human trust is experienced, witnessed, and remembered, yet
-              rarely preserved in structures that people can carry forward,
-              across communities, opportunities, and systems.
+              The foundational surface was an attempt to make a simple
+              observation visible: many of the people most trusted in real
+              communities carry reputations that do not travel well.
             </p>
 
             <p className="leading-relaxed">
-              A caregiver may become deeply trusted by families and remain
-              invisible outside those relationships. A tradesperson may spend
-              years earning confidence through consistency, skill, and care,
-              only to begin again whenever context changes.
+              Rather than introducing a finished trust system, the goal was to
+              articulate the problem clearly enough that others could see the
+              gap between lived trust and digital representation.
             </p>
 
             <p className="leading-relaxed">
-              MpatiQ explores how lived responsibility and witnessed conduct can
-              become transportable without reducing people to scores, rankings,
-              follower counts, or engagement metrics.
+              The work was also not intended to communicate the problem alone.
+              Building it sharpened the observation itself, created the core
+              ontology, and birthed early system decisions that defined the
+              later system's build.
+            </p>
+
+            <p className="leading-relaxed mt-10">
+              This surface therefore marked the beginning of MpatiQ's
+              exploration into portability, continuity, witness, and trust as
+              infrastructure.
             </p>
           </div>
         </section>
@@ -85,11 +106,10 @@ export default function MpatiQPage() {
           </p>
           <div className="space-y-4 text-neutral-300">
             <p>Trust is infrastructure.</p>
-            <p>Structure without reduction.</p>
-            <p>Witness over aggregation.</p>
-            <p>Context over compression.</p>
-            <p>Continuity over performance.</p>
-            <p>History should be preserved, not optimized.</p>
+            <p>Context gives trust meaning.</p>
+            <p>Trust is not a side-effect.</p>
+            <p>Continuity reveals character.</p>
+            <p>Reduction loses something important.</p>
           </div>
         </section>
 
@@ -101,68 +121,75 @@ export default function MpatiQPage() {
           </p>
 
           <div className="space-y-10">
-            {/* Constitutional Trust State Machine */}
             <div>
-              <h3 className="text-lg text-neutral-200">
-                Constitutional Trust State Machine
+              {/* Origins of the Trust Infrastructure Thesis */}
+              <h3 className="text-neutral-200 text-lg">
+                Origins of the Trust Infrastructure Thesis
               </h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                The governing trust-state transitions underlying MpatiQ.
+                The observations and questions that eventually evolved into
+                MpatiQ's broader trust architecture and constitutional design.
               </p>
             </div>
 
-            {/* Claims and Reflection Infrastructure */}
+            {/* Foundational Trust Language */}
             <div>
               <h3 className="text-lg text-neutral-200">
-                Claims and Reflection Infrastructure
+                Foundational Trust Language
               </h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                How claims become witnessed records of conduct.
+                The earliest public vocabulary used to describe trust as
+                infrastructure rather than reputation, engagement, or
+                visibility.
               </p>
             </div>
 
-            {/* Trust Domains and Passports */}
+            {/* Early Trust Claims */}
             <div>
-              <h3 className="text-lg text-neutral-200">Trust Domains</h3>
+              <h3 className="text-lg text-neutral-200">Early Trust Claims</h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Context-specific trust representation without scoring.
+                Foundational designs to preserve records of lived responsibility
+                in forms that could survive movement across roles, communities,
+                and systems.
               </p>
             </div>
 
-            {/* Witness Reflection Architecture */}
+            {/* Trust Portability Concepts */}
             <div>
               <h3 className="text-lg text-neutral-200">
-                Witness Reflection Architecture
+                Trust Portability Concepts
               </h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Structured observation anchored to lived experience.
+                Foundational designs for how trust would travel across
+                communities, roles, and digital systems without losing context.
               </p>
             </div>
 
-            {/* Dormancy and Continuity Preservation */}
+            {/* First Public System Framing */}
+            <div>
+              <h3 className="text-lg text-neutral-200">
+                First Public System Framing
+              </h3>
+
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
+                The earliest outward-facing articulation of the problem MpatiQ
+                was attempting to solve and the direction it proposed.
+              </p>
+            </div>
+
+            {/* Foundational Surface Architecture */}
             <div>
               <h3 className="text-neutral-200 text-lg">
-                Dormancy and Continuity Preservation
+                Foundational Surface Architecture
               </h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Preserving history without forcing perpetual activity.
-              </p>
-            </div>
-
-            {/* Trust Portability Across Contexts */}
-            <div>
-              <h3 className="text-neutral-200 text-lg">
-                Trust Portability Across Contexts
-              </h3>
-
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Helping trust travel beyond the systems and environments that
-                created it.
+                The structure, sequencing, and narrative choices used to
+                transform an emerging idea into a public artifact.
               </p>
             </div>
           </div>
@@ -185,20 +212,18 @@ export default function MpatiQPage() {
             {/* Writing & Ontology */}
             <div className="mt-10 space-y-2">
               <p>Naming & Ontology Design</p>
-              <p>Domain-Driven Design</p>
+              <p>Writing</p>
             </div>
 
-            {/* Research */}
+            {/* Research & Analysis */}
             <div className="mt-10 space-y-2">
-              <p>Writing</p>
               <p>Research & Analysis</p>
             </div>
 
             {/* Engineering */}
             <div className="mt-10 space-y-2">
-              <p>Data Modeling</p>
-              <p>Product Engineering</p>
-              <p>Full Stack Development</p>
+              <p>Frontend Development</p>
+              <p>Managed Backend Service</p>
             </div>
           </div>
         </section>
@@ -217,9 +242,9 @@ export default function MpatiQPage() {
               </h3>
 
               <div className="space-y-2 text-neutral-300">
-                <p>TypeScript</p>
+                <p>JavaScript</p>
                 <p>React</p>
-                <p>Next.js</p>
+                <p>Vite</p>
               </div>
             </div>
 
@@ -241,19 +266,8 @@ export default function MpatiQPage() {
               </h3>
 
               <div className="space-y-2 text-neutral-300">
-                <p>Prisma</p>
-                <p>Supabase</p>
-              </div>
-            </div>
-
-            {/* Communication */}
-            <div>
-              <h3 className="mb-3 text-sm uppercase tracking-[0.2em] text-neutral-600">
-                Communication
-              </h3>
-
-              <div className="space-y-2 text-neutral-300">
-                <p>Resend</p>
+                <p>Firebase</p>
+                <p>Firestore</p>
               </div>
             </div>
 
@@ -265,17 +279,6 @@ export default function MpatiQPage() {
 
               <div className="space-y-2 text-neutral-300">
                 <p>Vercel</p>
-              </div>
-            </div>
-
-            {/* Quality Assurance */}
-            <div>
-              <h3 className="text-neutral-600 uppercase tracking-[0.2em] mb-3 text-sm">
-                Quality Assurance
-              </h3>
-
-              <div className="space-y-2 text-neutral-300">
-                <p>Jest</p>
               </div>
             </div>
 
