@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation';
+import Link from 'next/link';
 /**
  * -------------------------------------------------------------------------
  *  Atelier - Opening Surface
@@ -52,13 +53,18 @@ export default function HomePage() {
 
             {/* Directional links */}
             <div className="mt-12 flex items-center gap-8">
-              <button className="text-sm uppercase tracking-[0.2em] text-neutral-200 transition-opacity hover:opacity-60 cursor-pointer">
+              <Link
+                href="/builds"
+                className="text-sm uppercase tracking-[0.2em] text-neutral-200 transition-opacity hover:opacity-60 cursor-pointer"
+              >
                 View Builds
-              </button>
+              </Link>
 
-              <button className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-opacity hover:opacity-60 cursor-pointer">
+              <Link
+              href='/notes'
+               className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-opacity hover:opacity-60 cursor-pointer">
                 Read Notes
-              </button>
+              </Link>
             </div>
           </div>
         </section>

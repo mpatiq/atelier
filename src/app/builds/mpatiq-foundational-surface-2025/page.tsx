@@ -31,7 +31,7 @@ export default function MpatiQFoundationalPage() {
         <BuildPortal
           title="MpatiQ (2025)"
           image="/previews/mpatiq-foundational2.png"
-          surfaceHref="https://www.mpatiq.com"
+          surfaceHref="https://origin.mpatiq.com/"
           operationalState="OPERATIONAL"
           statusColor="bg-emerald-400/70"
           classification="FOUNDATIONAL"

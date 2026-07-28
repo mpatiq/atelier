@@ -10,38 +10,51 @@
  * ---------------------------------------
  */
 
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Navigation() {
   return (
-    <header className="fixed top-0 z-50 w-full">
+    <header className="fixed top-0 z-50 w-full bg-[#0b0f19] backdrop-blur-md
+    border-b border-white/5">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-8 py-6">
         {/* Atelier identity */}
-        <p className="text-sm uppercase tracking-[0.3em] text-neutral-500">
+        <Link
+          href="/"
+          className="text-sm uppercase tracking-[0.3em] text-neutral-500"
+        >
           Atelier
-        </p>
+        </Link>
 
         {/* Directional Structure */}
 
         <nav className="flex items-center gap-8">
           <Link
-          href="/builds"
-           className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-opacity hover:opacity-60 cursor-pointer">
+            href="/builds"
+            className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-opacity hover:text-neutral-300 cursor-pointer"
+          >
             Builds
           </Link>
 
-          <button className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-opacity hover:opacity-60 cursor-pointer">
+          <Link
+            href="/notes"
+            className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-opacity hover:text-neutral-300 cursor-pointer"
+          >
             Notes
-          </button>
+          </Link>
 
-          <button className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-opacity hover:opacity-60 cursor-pointer">
+          <Link
+            href="/writings"
+            className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-opacity hover:text-neutral-300 cursor-pointer"
+          >
             Writings
-          </button>
+          </Link>
 
-          <button className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-opacity hover:opacity-60 cursor-pointer">
-            {/* Find a better word than case later -- maybe */}
+          <Link
+            href="/case-reviews"
+            className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-opacity hover:text-neutral-300 cursor-pointer"
+          >
             Case Reviews
-          </button>
+          </Link>
         </nav>
       </div>
     </header>
