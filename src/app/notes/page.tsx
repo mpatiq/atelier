@@ -78,8 +78,8 @@ export default function NotesPage() {
             className="mt-8 max-w-3xl text-lg leading-relaxed
                     text-neutral-400"
           >
-            Architectural observations, research insights, and systems
-            thinking developed through the process of building.
+            Architectural observations, research insights, and systems thinking
+            developed through the process of building.
           </p>
         </div>
 
@@ -92,7 +92,7 @@ export default function NotesPage() {
               className="group block border border-white/5 bg-[#0b0f19] px-8 py-8 transition-colors hover:border-white/20
             hover:bg-white/3"
             >
-              {/* The core object decomposed below - This will house it all */}
+              {/* The core object decomposed below - This will house it all. This flex container therefore has one responsibility: Arrange two things horizontally ~ (1). the content (2). the arrow  */}
               <div className="flex items-start justify-between gap-12">
                 {/* Start of object's properties render */}
                 <div className="max-w-3xl">
@@ -115,6 +115,7 @@ export default function NotesPage() {
                   </p>
                 </div>
 
+                {/* The accessory - the other flex-child: The arrow */}
                 <span className="mt-1 text-lg text-neutral-700 transition-transform duration-300 group-hover:translate-x-1">
                   →
                 </span>
