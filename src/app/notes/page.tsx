@@ -16,7 +16,7 @@ const notes = [
     category: 'TRUST ARCHITECTURE',
     href: '/notes/stability-without-scoring',
 
-    summary: "Beyond Ratings: Why Trust Shouldn't Become a Continuous Metric",
+    summary: "Beyond Ratings: Why Trust Shouldn't Be a Continuous Metric",
   },
 
   {
@@ -25,7 +25,7 @@ const notes = [
     href: '/notes/trust-windows',
 
     summary:
-      'Representing trust within bounded periods rather than continuous accumulation',
+      'Representing trust through bounded periods of lived responsibility',
   },
 
   {
@@ -33,7 +33,7 @@ const notes = [
     category: 'TRUST ARCHITECTURE',
     href: '/notes/dormancy',
 
-    summary: 'Why Dormant is preservation rather than failure',
+    summary: 'Why inactivity should not diminish preserved responsibility',
   },
 
   {

@@ -53,7 +53,7 @@ export default function Navigation() {
             href="/case-reviews"
             className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-opacity hover:text-neutral-300 cursor-pointer"
           >
-            Case Reviews
+            Contact
           </Link>
         </nav>
       </div>
