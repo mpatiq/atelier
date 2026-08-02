@@ -29,30 +29,21 @@ const writings = [
   },
 
   {
+    title: 'Foundational Algorithms',
+    category: 'SOFTWARE',
+    href: '/writings/foundational-algorithms',
+
+    summary:
+      'Why invention and optimization are different disciplines, and what must exist before optimization can begin.',
+  },
+
+  {
     title: 'Building Before Permission',
     category: 'LIFE',
-    href: '/writings/software-has-constitutions',
+    href: '/writings/building-before-permission',
 
     summary:
       'On building before recognition, certainty, or external validation. ',
-  },
-
-  {
-    title: 'Why I build Infrastructure',
-    category: 'PERSONAL',
-    href: '/writings/why-i-build-infrastructure',
-
-    summary:
-      'A reflection on the systems I keep returning to and the work they make possible.',
-  },
-
-  {
-    title: 'Craft — A Way of Being and Its Cost',
-    category: 'CRAFT',
-    href: '/writings/craft-a-way-of-being-and-its-cost',
-
-    summary:
-      'On reality, judgment, mastery, and the lifelong discipline of caring deeply about the work.',
   },
 ];
 
