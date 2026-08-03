@@ -1,4 +1,5 @@
-import Navigation from '@/components/navigation/Navigation';
+import Footer from '@/components/footer/Footer';
+
 import Link from 'next/link';
 /**
  * -------------------------------------------------------------------------
@@ -21,8 +22,7 @@ import Link from 'next/link';
 export default function HomePage() {
   return (
     <>
-      <Navigation />
-      <main className="min-h-screen">
+      <main className="flex min-h-[calc(100vh-5rem)] flex-col pt-20">
         {/*-------------------------------------------------------------------------
         Primary atmospheric container.
 
@@ -31,7 +31,7 @@ export default function HomePage() {
         -------------------------------------------------------------------
       */}
 
-        <section className="mx-auto flex min-h-screen max-w-6xl items-center px-8">
+        <section className="mx-auto flex flex-1 max-w-6xl items-center px-8 ">
           {/*-------------------------------------------------------------------
          Core textual field.
          Constrains line width identionally.
@@ -70,6 +70,8 @@ export default function HomePage() {
           </div>
         </section>
       </main>
+
+     
     </>
   );
 }
