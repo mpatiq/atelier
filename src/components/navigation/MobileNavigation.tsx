@@ -65,30 +65,15 @@ export default function MobileNavigation() {
         bg-[#0b0f19]
         "
         >
-          <div className="flex flex-col px-6 py-4">
-            {/* Builds Link */}
-            <Link
-              href="/builds"
-              onClick={closeMenu}
-              className="
-                border-b border-white/5
-                 py-5
-                 text-sm
-                 uppercase
-                 tracking-[0.2em]
-                 text-neutral-400
-                 transition-colors
-                 hover:text-neutral-200
-                 "
-            >
-              Builds
-            </Link>
+          <div className="px-6 py-4">
+            {/* Archive */}
 
-            {/* Notes Link */}
-            <Link
-              href="/notes"
-              onClick={closeMenu}
-              className="
+            <div className="flex flex-col">
+              {/* Builds Link */}
+              <Link
+                href="/builds"
+                onClick={closeMenu}
+                className="
                 border-b border-white/5
                  py-5
                  text-sm
@@ -98,15 +83,15 @@ export default function MobileNavigation() {
                  transition-colors
                  hover:text-neutral-200
                  "
-            >
-              Notes
-            </Link>
+              >
+                Builds
+              </Link>
 
-            {/* Writings Link */}
-            <Link
-              href="/writings"
-              onClick={closeMenu}
-              className="
+              {/* Notes Link */}
+              <Link
+                href="/notes"
+                onClick={closeMenu}
+                className="
                 border-b border-white/5
                  py-5
                  text-sm
@@ -116,15 +101,15 @@ export default function MobileNavigation() {
                  transition-colors
                  hover:text-neutral-200
                  "
-            >
-              Writings
-            </Link>
+              >
+                Notes
+              </Link>
 
-            {/* Contact Link */}
-            <Link
-              href="/contact"
-              onClick={closeMenu}
-              className="
+              {/* Writings Link */}
+              <Link
+                href="/writings"
+                onClick={closeMenu}
+                className="
                 border-b border-white/5
                  py-5
                  text-sm
@@ -134,9 +119,31 @@ export default function MobileNavigation() {
                  transition-colors
                  hover:text-neutral-200
                  "
-            >
-              Contact
-            </Link>
+              >
+                Writings
+              </Link>
+            </div>
+
+            {/* Contact */}
+            <div className="mt-5">
+              {/* Contact Link */}
+              <Link
+                href="/contact"
+                onClick={closeMenu}
+                className="
+                border-b border-white/5
+                 py-5
+                 text-sm
+                 uppercase
+                 tracking-[0.2em]
+                 text-neutral-400
+                 transition-colors
+                 hover:text-neutral-200
+                 "
+              >
+                Contact
+              </Link>
+            </div>
           </div>
         </nav>
       )}

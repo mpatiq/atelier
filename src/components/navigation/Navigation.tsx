@@ -37,33 +37,39 @@ export default function Navigation() {
         {/* ---------------------------------------------------------------- */}
 
         <nav className="hidden items-center gap-8 md:flex">
-          <Link
-            href="/builds"
-            className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-colors hover:text-neutral-300"
-          >
-            Builds
-          </Link>
+          <div className="flex items-center gap-8">
+            <Link
+              href="/builds"
+              className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-colors hover:text-neutral-300"
+            >
+              Builds
+            </Link>
 
-          <Link
-            href="/notes"
-            className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-colors hover:text-neutral-300"
-          >
-            Notes
-          </Link>
+            <Link
+              href="/notes"
+              className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-colors hover:text-neutral-300"
+            >
+              Notes
+            </Link>
 
-          <Link
-            href="/writings"
-            className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-colors hover:text-neutral-300"
-          >
-            Writings
-          </Link>
+            <Link
+              href="/writings"
+              className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-colors hover:text-neutral-300"
+            >
+              Writings
+            </Link>
+          </div>
 
-          <Link
-            href="/contact"
-            className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-colors hover:text-neutral-300"
-          >
-            Contact
-          </Link>
+          {/* Special treatment to the Contact button ~ not the same type of activity as the other navbar activities */}
+
+          <div className="ml-12">
+            <Link
+              href="/contact"
+              className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-colors hover:text-neutral-300"
+            >
+              Contact
+            </Link>
+          </div>
         </nav>
 
         {/*  */}
