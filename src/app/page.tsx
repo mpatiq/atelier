@@ -1,4 +1,4 @@
-import Navigation from '@/components/Navigation';
+import Navigation from '@/components/navigation/Navigation';
 import Link from 'next/link';
 /**
  * -------------------------------------------------------------------------
@@ -39,7 +39,7 @@ export default function HomePage() {
       */}
           <div className="max-w-4xl">
             {/* Premise */}
-            <h1 className="text-5xl font-light leading-[1.1] tracking-[0.04em] text-neutral-100 md:text-6xl">
+            <h1 className="text-4xl font-light leading-[1.15] tracking-[0.03em] text-neutral-100 sm:text-5xl md:text-6xl">
               Systems, trust infrastructure,
               <br />
               software craft, and architecture.
@@ -61,8 +61,9 @@ export default function HomePage() {
               </Link>
 
               <Link
-              href='/notes'
-               className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-opacity hover:opacity-60 cursor-pointer">
+                href="/notes"
+                className="text-sm uppercase tracking-[0.2em] text-neutral-500 transition-opacity hover:opacity-60 cursor-pointer"
+              >
                 Read Notes
               </Link>
             </div>
