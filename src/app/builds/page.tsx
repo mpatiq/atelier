@@ -128,10 +128,10 @@ export default function BuildsPage() {
           {builds.map((build) => {
             const cardContent = (
               <>
-                <div className="mb-6 flex items-start justify-between">
+                <div className="mb-6 flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
                   {/* Build identity */}
                   <div>
-                    <h2 className="text-2xl font-light text-neutral-100">
+                    <h2 className="text-xl md:text-2xl font-light text-neutral-100">
                       {build.name}
                     </h2>
 
@@ -141,7 +141,7 @@ export default function BuildsPage() {
                   </div>
 
                   {/* Operational state + directional cue */}
-                  <div className="flex items-center gap-6">
+                  <div className="flex items-center justify-between md:justify-start md:gap-6">
                     <div className="flex items-center gap-3">
                       <div
                         className={`h-2 w-2 rounded-full ${
@@ -172,7 +172,7 @@ export default function BuildsPage() {
               <Link
                 key={build.name}
                 href={build.href}
-                className="group block border border-white/5 bg-white/2 px-8 py-10 transition-colors hover:border-white/20 hover:bg-white/5"
+                className="group block border border-white/5 bg-white/2 px-6 py-8 md:px-8 md:py-10 transition-colors hover:border-white/20 hover:bg-white/5"
               >
                 {cardContent}
               </Link>
