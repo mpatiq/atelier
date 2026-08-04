@@ -22,7 +22,7 @@ import Link from 'next/link';
 export default function HomePage() {
   return (
     <>
-      <main className="flex min-h-[calc(100vh-5rem)] flex-col pt-20">
+      <main className="flex min-h-[calc(100vh-5rem)] flex-col pt-16 md:pt-20">
         {/*-------------------------------------------------------------------------
         Primary atmospheric container.
 
@@ -31,7 +31,7 @@ export default function HomePage() {
         -------------------------------------------------------------------
       */}
 
-        <section className="mx-auto flex flex-1 max-w-6xl items-center px-8 ">
+        <section className="mx-auto flex max-w-6xl items-center px-8 ">
           {/*-------------------------------------------------------------------
          Core textual field.
          Constrains line width identionally.
@@ -39,20 +39,20 @@ export default function HomePage() {
       */}
           <div className="max-w-4xl">
             {/* Premise */}
-            <h1 className="text-4xl font-light leading-[1.15] tracking-[0.03em] text-neutral-100 sm:text-5xl md:text-6xl">
+            <h1 className="text-4xl font-light leading-[1.15] tracking-[0.03em] text-neutral-100 sm:text-5xl lg:text-6xl">
               Systems, trust infrastructure,
               <br />
               software craft, and architecture.
             </h1>
 
             {/* Orientation */}
-            <p className="mt-8 max-w-2xl text-lg leading-relaxed text-neutral-400">
+            <p className="mt-6 md:mt-8 max-w-2xl text-lg leading-relaxed text-neutral-400">
               A living archive of builds, writings, notes, and technical craft
               by Uru Onyemaobi.
             </p>
 
             {/* Directional links */}
-            <div className="mt-12 flex items-center gap-8">
+            <div className="mt-10 md:mt-12 flex items-center gap-8">
               <Link
                 href="/builds"
                 className="text-sm uppercase tracking-[0.2em] text-neutral-200 transition-opacity hover:opacity-60 cursor-pointer"
