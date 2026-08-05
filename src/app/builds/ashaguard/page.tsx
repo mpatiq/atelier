@@ -1,26 +1,36 @@
-import BuildPortal from '@/components/BuildPortal';
 /**
- * -----------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------
  * MpatiQ
  *
  * Foundations into how trust, reputation, and lived responsibility would be        represented beyond profiles, scores, and traditional credentials.
  *
- * -------------------------------------------------------------------------------------
+ * -------------------------------------------------------------------------------
  */
+
+import BuildPortal from '@/components/BuildPortal';
+import Link from 'next/link';
 
 export default function AshaGuardPage() {
   return (
     <main className="min-h-screen px-8 pb-32 pt-40">
       <section className="mx-auto max-w-5xl">
+        {/* --------------------------------------------------------------- */}
+        {/* Return Navigation */}
+        {/* --------------------------------------------------------------- */}
+        <Link
+          href="/builds"
+          className="inline-flex items-center gap-2 text-sm text-white/40
+        transition-colors duration-200 hover:text-white/70"
+        >
+          ← Builds
+        </Link>
         {/* Build Identity */}
-        <div className="mb-24">
+        <div className="mt-10 mb-24">
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-neutral-500">
             Research
           </p>
 
-          <h1 className="font-light text-5xl tracking-[0.04em]">
-            AshaGuard — Care System Prototype
-          </h1>
+          <h1 className="font-light text-5xl tracking-[0.04em]">AshaGuard</h1>
 
           <p className="mt-8 text-lg max-w-3xl leading-relaxed text-neutral-400">
             An early research prototype exploring trust-sensitive care systems
@@ -270,6 +280,38 @@ export default function AshaGuardPage() {
             {/* Closing div of entire grid is directly below */}
           </div>
         </section>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* Build Progression                                                */}
+        {/* ------------------------------------------------------------------ */}
+
+        <footer className="mt-28 flex items-center justify-between border-t border-white/10 pt-12">
+          <div>
+            <p className="text-sm uppercase tracking-[0.3em] text-neutral-500">
+              Previous
+            </p>
+
+            <Link
+              href="/builds/instant-checkout-link"
+              className="mt-4 inline-flex items-center gap-2 text-lg text-white transition-opacity hover:opacity-70"
+            >
+              ← Instant Checkout Link
+            </Link>
+          </div>
+
+          <div className="text-right">
+            <p className="text-sm uppercase tracking-[0.3em] text-neutral-500">
+              Next Build
+            </p>
+
+            <Link
+              href="/builds/e-coli-experiments"
+              className="mt-4 inline-flex items-center gap-2 text-lg text-white transition-opacity hover:opacity-70"
+            >
+              E.coli Experiments →
+            </Link>
+          </div>
+        </footer>
       </section>
     </main>
   );

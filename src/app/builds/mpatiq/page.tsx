@@ -1,20 +1,33 @@
-import BuildPortal from '@/components/BuildPortal';
 /**
- * -----------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------
  * MpatiQ
  *
  * Trust infrastructure for preserving and transporting records of lived responsibility
  * and witnessed conduct.
  *
- * -------------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------
  */
+
+import BuildPortal from '@/components/BuildPortal';
+import Link from 'next/link';
 
 export default function MpatiQPage() {
   return (
     <main className="min-h-screen px-8 pb-32 pt-40">
       <section className="mx-auto max-w-5xl">
+        {/* --------------------------------------------------------------- */}
+        {/* Return Navigation */}
+        {/* --------------------------------------------------------------- */}
+        <Link
+          href="/builds"
+          className="inline-flex items-center gap-2 text-sm text-white/40
+        transition-colors duration-200 hover:text-white/70"
+        >
+          ← Builds
+        </Link>
+
         {/* Build Identity */}
-        <div className="mb-24">
+        <div className="mt-10 mb-24">
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-neutral-500">
             Infrastructure
           </p>
@@ -30,7 +43,7 @@ export default function MpatiQPage() {
 
         <BuildPortal
           title="MpatiQ"
-          image="/previews/mpatiq-portal3.png"
+          image="/previews/mpatiq_1.png"
           surfaceHref="https://www.mpatiq.com"
           operationalState="OPERATIONAL"
           statusColor="bg-emerald-400/70"
@@ -282,6 +295,23 @@ export default function MpatiQPage() {
             {/* Closing div of entire grid is directly below */}
           </div>
         </section>
+
+        {/* ------------------------------------------------------------ */}
+        {/* Build Progression */}
+        {/* ------------------------------------------------------------ */}
+        <footer className="mt-28 border-t border-white/10 pt-12">
+          <p className="text-sm uppercase tracking-[0.3em] text-neutral-500">
+            Next Build
+          </p>
+          {/* Link to next build */}
+          <Link
+            href="/builds/atelier"
+            className="mt-5 inline-flex items-center gap-3 text-2xl font-light transition-opacity duration-200 hover:opacity-70"
+          >
+            Atelier
+            <span aria-hidden>→</span>
+          </Link>
+        </footer>
       </section>
     </main>
   );

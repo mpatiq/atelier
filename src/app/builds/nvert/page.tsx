@@ -1,19 +1,31 @@
-import BuildPortal from '@/components/BuildPortal';
 /**
- * -----------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------
  * Nvert
  *
  * A learning and collaboration system exploring how meaningful learning relationships might emerge through shared curiosity, serendipity, sustained exploration, and intellectual companionship.
  *
- * -----------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------
  */
+import BuildPortal from '@/components/BuildPortal';
+import Link from 'next/link';
 
 export default function Nvert() {
   return (
     <main className="min-h-screen px-8 pb-32 pt-40">
       <section className="mx-auto max-w-5xl">
+        {/* --------------------------------------------------------------- */}
+        {/* Return Navigation */}
+        {/* --------------------------------------------------------------- */}
+        <Link
+          href="/builds"
+          className="inline-flex items-center gap-2 text-sm text-white/40
+        transition-colors duration-200 hover:text-white/70"
+        >
+          ← Builds
+        </Link>
+
         {/* Build Identity */}
-        <div className="mb-24">
+        <div className="mt-10 mb-24">
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-neutral-500">
             System
           </p>
@@ -242,8 +254,6 @@ export default function Nvert() {
               </div>
             </div>
 
-    
-
             {/* Deployment */}
             <div>
               <h3 className="text-neutral-600 uppercase tracking-[0.2em] mb-3 text-sm">
@@ -258,6 +268,38 @@ export default function Nvert() {
             {/* Closing div of entire grid is directly below */}
           </div>
         </section>
+
+        {/* ------------------------------------------------------------------ */}
+        {/* Build Progression                                                */}
+        {/* ------------------------------------------------------------------ */}
+
+        <footer className="mt-28 flex items-center justify-between border-t border-white/10 pt-12">
+          <div>
+            <p className="text-sm uppercase tracking-[0.3em] text-neutral-500">
+              Previous
+            </p>
+
+            <Link
+              href="/builds/mpatiq-constitutional-state-machine"
+              className="mt-4 inline-flex items-center gap-2 text-lg text-white transition-opacity hover:opacity-70"
+            >
+              ← MpatiQ Constitutional State Machine
+            </Link>
+          </div>
+
+          <div className="text-right">
+            <p className="text-sm uppercase tracking-[0.3em] text-neutral-500">
+              Next Build
+            </p>
+
+            <Link
+              href="/builds/instant-checkout-link"
+              className="mt-4 inline-flex items-center gap-2 text-lg text-white transition-opacity hover:opacity-70"
+            >
+              Instant Checkout Link →
+            </Link>
+          </div>
+        </footer>
       </section>
     </main>
   );

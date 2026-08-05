@@ -29,7 +29,7 @@ const builds = [
 
   {
     name: 'Atelier',
-    operationalState: 'ACTIVE DEVELOPMENT',
+    operationalState: 'OPERATIONAL',
     classification: 'SYSTEM',
     href: '/builds/atelier',
 

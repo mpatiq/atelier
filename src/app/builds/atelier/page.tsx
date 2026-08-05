@@ -1,17 +1,17 @@
 /**
  * ------------------------------------------------------------------------------
- * MpatiQ Constitutional State Machine
+ * Atelier
  *
- * Constitutional framework governing bounded trust states, constrained transitions,
- * and preservation of trust without erasure.
+ * Living archive preserving an ongoing body of work across systems, software,
+ * architecture, research, and writing
  *
- *
- *
- * -------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------
  */
+
+import BuildPortal from '@/components/BuildPortal';
 import Link from 'next/link';
 
-export default function MpatiQConstitutionalStateMachine() {
+export default function AtelierPage() {
   return (
     <main className="min-h-screen px-8 pb-32 pt-40">
       <section className="mx-auto max-w-5xl">
@@ -29,81 +29,81 @@ export default function MpatiQConstitutionalStateMachine() {
         {/* Build Identity */}
         <div className="mt-10 mb-24">
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-neutral-500">
-            Foundational
+            System
           </p>
 
-          <h1 className="font-light text-5xl tracking-[0.04em]">
-            MpatiQ Constitutional State Machine
-          </h1>
+          <h1 className="font-light text-5xl tracking-[0.04em]">Atelier</h1>
 
           <p className="mt-8 text-lg max-w-3xl leading-relaxed text-neutral-400">
-            Constitutional trust-state infrastructure governing reflection,
-            continuity, and non-reductive trust transitions.
+            A living archive for systems work, architectural notes, writings,
+            and technical craft.
+            <br />
+            Preserved consciously.
           </p>
         </div>
 
-        {/* Constitutional Surface */}
-        <section className="mb-24">
-          <div className="border  border-white/5 bg-white/2 p-10">
-            <p className="mb-6 text-sm uppercase tracking-[0.3em] text-neutral-500">
-              Constitutional Excerpt
-            </p>
+        <BuildPortal
+          title="Atelier"
+          image="/previews/atelier_2.png"
+          surfaceHref="https://atelier.mpatiq.com/"
+          operationalState="OPERATIONAL"
+          statusColor="bg-emerald-400/70"
+          classification="PRESERVATION SYSTEM"
+          codeAccess="OPEN SOURCE"
+          actions={[
+            {
+              label: 'Visit',
+              href: 'https://atelier.mpatiq.com/',
+            },
 
-            <div className="space-y-6">
-              {/* States */}
-              {/* UNREFLECTED */}
-              <div>
-                <h3 className="text-neutral-200">UNREFLECTED</h3>
-                <p className="mt-2 text-sm leading-relaxed text-neutral-500">
-                  A complete trust state without reflections. Private by
-                  default.
-                </p>
-              </div>
-
-              {/* REFLECTED_LIGHT */}
-              <div>
-                <h3 className="text-neutral-200">REFLECTED_LIGHT</h3>
-                <p className="mt-2 text-sm leading-relaxed text-neutral-500">
-                  Recognition anchored to witnessed conduct within a bounded
-                  context.
-                </p>
-              </div>
-
-              {/* REFLECTED_STABLE */}
-              <div>
-                <h3 className="text-neutral-200">REFLECTED_STABLE</h3>
-                <p className="mt-2 text-sm leading-relaxed text-neutral-500">
-                  A state requiring multiple aligned reflections.
-                </p>
-              </div>
-
-              {/* DORMANT */}
-              <div>
-                <h3 className="text-neutral-200">DORMANT</h3>
-                <p className="mt-2 text-sm leading-relaxed text-neutral-500">
-                  Preserved history withdrawn from active presentation without
-                  erasure.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+            {
+              label: 'Codebase',
+              href: 'https://github.com/mpatiq/atelier',
+            },
+          ]}
+        />
 
         {/* Core thesis */}
         <section className="mb-24">
+          {/* Why this system exists */}
           <p className="mb-6 text-sm uppercase tracking-[0.3em] text-neutral-500">
             Core Thesis
           </p>
           <div className="max-w-3xl space-y-6 text-neutral-300">
+            <p className="leading-relaxed">Software.</p>
+
+            <p className="leading-relaxed">Ideas.</p>
+
+            <p className="leading-relaxed">Architectures.</p>
+
+            <p className="leading-relaxed">Research.</p>
+
             <p className="leading-relaxed">
-              The Constitutional State Machine exists to establish the
-              constitutional rules by which trust may be represented, preserved,
-              and transitioned in MpatiQ. It constrains state changes, protects
-              historical continuity, and prevents trust from becoming an
-              optimization target. Rather than asking how trust can be
-              maximized, the state machine asks how trust can be represented
-              faithfully.
+              Much of the work that shapes systems is rarely visible in one
+              place.
             </p>
+
+            <p className="leading-relaxed">
+              Builds become disconnected from the thinking that produced them.
+            </p>
+
+            <p className="leading-relaxed">
+              Notes disappear into private folders and untouched stacks.
+            </p>
+
+            <p className="leading-relaxed">
+              Architectural decisions are forgotten once software ships.
+            </p>
+
+            <p className="leading-relaxed">
+              Writing becomes separated from engineering.
+            </p>
+
+            <div className="mt-8">
+              <p className="leading-relaxed">
+                Atelier exists to preserve that continuity.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -114,86 +114,76 @@ export default function MpatiQConstitutionalStateMachine() {
             System Principles
           </p>
           <div className="space-y-4 text-neutral-300">
-            <p>Trust states are qualitative.</p>
-            <p>History should be preserved.</p>
-            <p>Dormancy is not failure.</p>
-            <p>Transitions must remain constrained.</p>
-            <p>Trust should not be optimized.</p>
+            <p>Work should remain connected to its thinking.</p>
+            <p>Ideas deserve preservation.</p>
+            <p>Revisit your work.</p>
+            <p>Purify it.</p>
+            <p>Remain recursive.</p>
           </div>
         </section>
 
         {/* Architectural Notes */}
         <section className="mb-24">
-          {/* Foundational Structures within MpatiQ */}
+          {/* Foundational Structures within Atelier */}
           <p className="mb-8 text-sm uppercase tracking-[0.3em] text-neutral-500">
             Architectural Notes
           </p>
 
           <div className="space-y-10">
+            {/* Builds */}
             <div>
-              {/* Trust State Definitions */}
-              <h3 className="text-neutral-200 text-lg">
-                Trust State Definitions
-              </h3>
+              <h3 className="text-lg text-neutral-200">Builds</h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                The constitutional states governing trust representation and
-                continuity.
+                The primary record of systems, products, experiments, and
+                ongoing work. Each build preserves not only what was created,
+                but the architectural thinking and engineering disciplines that
+                shaped it.
               </p>
             </div>
 
-            {/* Transition Invariants */}
+            {/* Notes */}
             <div>
-              <h3 className="text-lg text-neutral-200">
-                Transition Invariants
-              </h3>
+              <h3 className="text-lg text-neutral-200">Notes</h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Rules constraining movement between trust states.
+                Architectural observations, engineering notes, and meta-patterns
+                identified through the building and examination of systems.
               </p>
             </div>
 
-            {/* Reflection Alignment Logic */}
+            {/* Writings */}
             <div>
-              <h3 className="text-lg text-neutral-200">
-                Reflection Alignment Logic
-              </h3>
+              <h3 className="text-lg text-neutral-200">Writings</h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Conditions under which witnessed conduct may influence state.
+                Long-form essays on software, invention, trust infrastructure,
+                architecture, and the intellectual foundations that shape
+                enduring systems.
               </p>
             </div>
 
-            {/* Dormancy Architecture */}
+            {/* Shared Build Portal */}
             <div>
-              <h3 className="text-lg text-neutral-200">
-                Dormancy Architecture
-              </h3>
+              <h3 className="text-lg text-neutral-200">Shared Build Portal</h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Preserving history without requiring constant activity.
+                A reusable presentation surface providing a consistent
+                structural language across builds while allowing each project to
+                express its own identity, status, disciplines, and tooling.
               </p>
             </div>
 
-            {/* Constitutional Separation */}
-            <div>
-              <h3 className="text-lg text-neutral-200">
-                Constitutional Separation
-              </h3>
-
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Separating governance from interface and presentation.
-              </p>
-            </div>
-
-            {/* Historical Preservation Model */}
+            {/* Information Architecture */}
             <div>
               <h3 className="text-neutral-200 text-lg">
-                Historical Preservation Model
+                Information Architecture
               </h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Maintaining continuity without erasure.
+                An information architecture designed to preserve the
+                relationships between builds, writings, and notes, keeping
+                builds, ideas, and context connected across independent pages.
               </p>
             </div>
           </div>
@@ -210,18 +200,24 @@ export default function MpatiQConstitutionalStateMachine() {
             {/* Systems */}
             <div className="space-y-2">
               <p>Systems Design</p>
-              <p>Trust Architecture</p>
+              <p>Information Architecture</p>
             </div>
 
             {/* Writing & Ontology */}
             <div className="mt-10 space-y-2">
-              <p>State Machine Design</p>
-              <p>Ontology Design</p>
+              <p>Writing</p>
             </div>
 
-            {/* Research & Analysis */}
+            {/* Engineering & Design */}
             <div className="mt-10 space-y-2">
-              <p>Research & Analysis</p>
+              <p>Product Engineering</p>
+              <p>Front-End Development</p>
+            </div>
+
+            {/* Design & Visuals */}
+            <div className="mt-10 space-y-2">
+              <p>Interaction Design</p>
+              <p>Visual Systems</p>
             </div>
           </div>
         </section>
@@ -241,28 +237,30 @@ export default function MpatiQConstitutionalStateMachine() {
 
               <div className="space-y-2 text-neutral-300">
                 <p>TypeScript</p>
+                <p>React</p>
+                <p>Next.js</p>
               </div>
             </div>
 
-            {/* Documentation */}
+            {/* Interface */}
             <div>
               <h3 className="mb-3 text-sm uppercase tracking-[0.2em] text-neutral-600">
-                Documentation
+                Interface
               </h3>
 
               <div className="space-y-2 text-neutral-300">
-                <p>Markdown</p>
+                <p>Tailwind CSS</p>
               </div>
             </div>
 
-            {/* Quality Assurance */}
+            {/* Deployment */}
             <div>
               <h3 className="text-neutral-600 uppercase tracking-[0.2em] mb-3 text-sm">
-                Quality Assurance
+                Deployment
               </h3>
 
               <div className="space-y-2 text-neutral-300">
-                <p>Jest</p>
+                <p>Vercel</p>
               </div>
             </div>
 
@@ -281,10 +279,10 @@ export default function MpatiQConstitutionalStateMachine() {
             </p>
 
             <Link
-              href="/builds/mpatiq-foundational-surface-2025"
+              href="/builds/mpatiq"
               className="mt-4 inline-flex items-center gap-2 text-lg text-white transition-opacity hover:opacity-70"
             >
-              ← MpatiQ — Foundational Surface (2025)
+              ← MpatiQ
             </Link>
           </div>
 
@@ -294,10 +292,10 @@ export default function MpatiQConstitutionalStateMachine() {
             </p>
 
             <Link
-              href="/builds/nvert"
+              href="/builds/mpatiq-foundational-surface-2025"
               className="mt-4 inline-flex items-center gap-2 text-lg text-white transition-opacity hover:opacity-70"
             >
-              Nvert →
+              MpatiQ — Foundational Surface (2025) →
             </Link>
           </div>
         </footer>
