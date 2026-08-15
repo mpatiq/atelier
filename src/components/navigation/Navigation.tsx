@@ -16,6 +16,7 @@
 
 import Link from 'next/link';
 import MobileNavigation from './MobileNavigation';
+import AtelierMark from '../branding/AtelierMark';
 
 export default function Navigation() {
   return (
@@ -27,9 +28,10 @@ export default function Navigation() {
         {/* Atelier identity */}
         <Link
           href="/"
-          className="text-sm uppercase tracking-[0.3em] text-neutral-500"
+          className="flex items-center gap-3 text-sm uppercase tracking-[0.3em] text-neutral-500"
         >
-          Atelier
+          <AtelierMark className='h-10 w-10' />
+          <span>Atelier</span>
         </Link>
 
         {/* ---------------------------------------------------------------- */}

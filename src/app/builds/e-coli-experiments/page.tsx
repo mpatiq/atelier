@@ -113,7 +113,10 @@ export default function EColiExperiments() {
           <div className="space-y-4 text-neutral-300">
             <p>Simple rules can produce complex behavior.</p>
             <p>Local information can guide adaptation.</p>
-            <p>Environments shape intelligence.</p>
+            <p>
+              Intelligence emerges from continuous interaction between an
+              adaptive agent and its environment.
+            </p>
             <p>Optimization emerges through interaction.</p>
             <p>Bias influences exploration.</p>
           </div>
