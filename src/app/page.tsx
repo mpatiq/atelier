@@ -1,6 +1,7 @@
-import Footer from '@/components/footer/Footer';
+
 
 import Link from 'next/link';
+import AtelierMark from '@/components/branding/AtelierMark';
 /**
  * -------------------------------------------------------------------------
  *  Atelier - Opening Surface
@@ -31,10 +32,10 @@ export default function HomePage() {
         -------------------------------------------------------------------
       */}
 
-        <section className="mx-auto flex flex-1 max-w-6xl items-center px-8 ">
+        <section className="mx-auto flex w-full flex-1 max-w-6xl items-center justify-between gap-16 px-8">
           {/*-------------------------------------------------------------------
          Core textual field.
-         Constrains line width identionally.
+         Constrains line width intentionally.
          -------------------------------------------------------------------
       */}
           <div className="max-w-4xl">
@@ -68,10 +69,13 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
+
+          {/* Atelier architectural mark */}
+          <div className="hidden shrink-0 lg:translate-x-10 lg:-translate-y-4 lg:flex lg:items-center lg:justify-center">
+            <AtelierMark className="h-82 w-82 text-neutral-100" />
+          </div>
         </section>
       </main>
-
-     
     </>
   );
 }
