@@ -10,6 +10,33 @@
 
 import Link from 'next/link';
 
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'E.coli Experiments — Atelier',
+  description:
+    'Experiments exploring emergent intelligence, optimization behavior, and biased environmental navigation.',
+  openGraph: {
+    title: 'E.coli Experiments — Atelier',
+    description:
+      'Experiments exploring emergent intelligence, optimization behavior, and biased environmental navigation.',
+    images: [
+      {
+        url: '/previews/atelier-open-graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Atelier',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'E.coli Experiments — Atelier',
+    description:
+      'Experiments exploring emergent intelligence, optimization behavior, and biased environmental navigation.',
+    images: ['/previews/atelier-open-graph.png'],
+  },
+};
+
 export default function EColiExperiments() {
   return (
     <main className="min-h-screen px-8 pb-32 pt-40">

@@ -12,6 +12,33 @@
 
 import Link from 'next/link';
 
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'Dormancy — Atelier',
+  description:
+    'Preserving trust history and continuity without requiring perpetual activity.',
+  openGraph: {
+    title: 'Dormancy — Atelier',
+    description:
+      'Preserving trust history and continuity without requiring perpetual activity.',
+    images: [
+      {
+        url: '/previews/atelier-open-graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Atelier',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Dormancy — Atelier',
+    description:
+      'Preserving trust history and continuity without requiring perpetual activity.',
+    images: ['/previews/atelier-open-graph.png'],
+  },
+};
+
 export default function DormancyPage() {
   return (
     <main className="min-h-screen bg-[#0b0f19] px-8 pb-32 pt-40 text-white">

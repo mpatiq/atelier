@@ -10,6 +10,33 @@
 import BuildPortal from '@/components/BuildPortal';
 import Link from 'next/link';
 
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'AshaGuard — Atelier',
+  description:
+    'Trust-sensitive behavioral and caregiver insight system exploring early drift detection and reflective AI support.',
+  openGraph: {
+    title: 'AshaGuard — Atelier',
+    description:
+      'Trust-sensitive behavioral and caregiver insight system exploring early drift detection and reflective AI support.',
+    images: [
+      {
+        url: '/previews/atelier-open-graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Atelier',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AshaGuard — Atelier',
+    description:
+      'Trust-sensitive behavioral and caregiver insight system exploring early drift detection and reflective AI support.',
+    images: ['/previews/atelier-open-graph.png'],
+  },
+};
+
 export default function AshaGuardPage() {
   return (
     <main className="min-h-screen px-8 pb-32 pt-40">

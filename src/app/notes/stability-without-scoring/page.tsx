@@ -14,6 +14,33 @@
 
 import Link from 'next/link';
 
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'Stability Without Scoring — Atelier',
+  description:
+    'Exploring how trust can gain stability without collapsing human conduct into scores or rankings.',
+  openGraph: {
+    title: 'Stability Without Scoring — Atelier',
+    description:
+      'Exploring how trust can gain stability without collapsing human conduct into scores or rankings.',
+    images: [
+      {
+        url: '/previews/atelier-open-graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Atelier',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Stability Without Scoring — Atelier',
+    description:
+      'Exploring how trust can gain stability without collapsing human conduct into scores or rankings.',
+    images: ['/previews/atelier-open-graph.png'],
+  },
+};
+
 export default function StabilityWithoutScoringPage() {
   return (
     <main className="min-h-screen bg-[#0b0f19] px-8 pb-32 pt-40 text-white">

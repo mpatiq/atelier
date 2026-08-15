@@ -12,6 +12,33 @@
 
 import Link from 'next/link';
 
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'Trust Windows — Atelier',
+  description:
+    'A temporal structure for preserving the context, continuity, and witnessed history of lived responsibility.',
+  openGraph: {
+    title: 'Trust Windows — Atelier',
+    description:
+      'A temporal structure for preserving the context, continuity, and witnessed history of lived responsibility.',
+    images: [
+      {
+        url: '/previews/atelier-open-graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Atelier',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Trust Windows — Atelier',
+    description:
+      'A temporal structure for preserving the context, continuity, and witnessed history of lived responsibility.',
+    images: ['/previews/atelier-open-graph.png'],
+  },
+};
+
 export default function TrustWindowsPage() {
   return (
     <main className="min-h-screen bg-[#0b0f19] px-8 pb-32 pt-40 text-white">

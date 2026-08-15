@@ -11,6 +11,36 @@
  */
 import Link from 'next/link';
 
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'MpatiQ Constitutional State Machine — Atelier',
+  description:
+    'Constitutional trust-state infrastructure governing reflection, continuity, and non-reductive trust transitions.',
+
+  openGraph: {
+    title: 'MpatiQ Constitutional State Machine — Atelier',
+    description:
+      'Constitutional trust-state infrastructure governing reflection, continuity, and non-reductive trust transitions.',
+    images: [
+      {
+        url: '/previews/atelier-open-graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Atelier',
+      },
+    ],
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'MpatiQ Constitutional State Machine — Atelier',
+    description:
+      'Constitutional trust-state infrastructure governing reflection, continuity, and non-reductive trust transitions.',
+    images: ['/previews/atelier-open-graph.png'],
+  },
+};
+
 export default function MpatiQConstitutionalStateMachine() {
   return (
     <main className="min-h-screen px-8 pb-32 pt-40">

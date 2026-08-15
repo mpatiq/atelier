@@ -11,6 +11,33 @@
 
 import Link from 'next/link';
 
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'Environmental Bias — Atelier',
+  description:
+    'Exploring how environmental structure and bias shape navigation, adaptation, and emergent intelligent behavior.',
+  openGraph: {
+    title: 'Environmental Bias — Atelier',
+    description:
+      'Exploring how environmental structure and bias shape navigation, adaptation, and emergent intelligent behavior.',
+    images: [
+      {
+        url: '/previews/atelier-open-graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Atelier',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Environmental Bias — Atelier',
+    description:
+      'Exploring how environmental structure and bias shape navigation, adaptation, and emergent intelligent behavior.',
+    images: ['/previews/atelier-open-graph.png'],
+  },
+};
+
 export default function EnvironmentalBiasPage() {
   return (
     <main className="min-h-screen bg-[#0b0f19] px-8 pb-32 pt-40 text-white">

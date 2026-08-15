@@ -11,6 +11,33 @@
 
 import Link from 'next/link';
 
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'Constitutional Separation — Atelier',
+  description:
+    'Exploring the separation of constitutional rules from application behavior in trust infrastructure.',
+  openGraph: {
+    title: 'Constitutional Separation — Atelier',
+    description:
+      'Exploring the separation of constitutional rules from application behavior in trust infrastructure.',
+    images: [
+      {
+        url: '/previews/atelier-open-graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Atelier',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Constitutional Separation — Atelier',
+    description:
+      'Exploring the separation of constitutional rules from application behavior in trust infrastructure.',
+    images: ['/previews/atelier-open-graph.png'],
+  },
+};
+
 export default function ConstitutionalSeparationPage() {
   return (
     <main className="min-h-screen bg-[#0b0f19] px-8 pb-32 pt-40 text-white">

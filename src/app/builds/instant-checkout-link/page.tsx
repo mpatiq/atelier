@@ -10,6 +10,36 @@
 import BuildPortal from '@/components/BuildPortal';
 import Link from 'next/link';
 
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Instant Checkout Link — Atelier',
+  description:
+    'Payment and checkout infrastructure designed for fast, direct transaction flow.',
+
+  openGraph: {
+    title: 'Instant Checkout Link — Atelier',
+    description:
+      'Payment and checkout infrastructure designed for fast, direct transaction flow.',
+    images: [
+      {
+        url: '/previews/atelier-open-graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Atelier',
+      },
+    ],
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Instant Checkout Link — Atelier',
+    description:
+      'Payment and checkout infrastructure designed for fast, direct transaction flow.',
+    images: ['/previews/atelier-open-graph.png'],
+  },
+};
+
 export default function InstantCheckoutLink() {
   return (
     <main className="min-h-screen px-8 pb-32 pt-40">
