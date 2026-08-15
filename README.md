@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Atelier
 
-## Getting Started
+A living archive of systems, software, research, writings, and technical craft by Uru Onyemaobi.
 
-First, run the development server:
+Atelier documents work across trust infrastructure, systems design, product engineering, applied AI, philosophy, and experimental research.
+
+## Structure
+
+The archive is organized around three primary surfaces:
+
+- **Builds** - systems, experiments, deployed products, and active work
+- **Notes** - architectural and technical observations developed during the work
+- **Writings** - longer-form arguments and explorations
+
+## Development
+
+Atelier is built with Next.js, React, TypeScript, and Tailwind CSS.
+
+To run locally:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Licensing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The software source code of Atelier is available under the MIT License.
 
-## Learn More
+The Atelier name, mark, and visual identity, along with original writings, notes, project descriptions, images, screenshots, and other authored content, are not licensed
+under the MIT License unless expressly stated otherwise.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+See LICENSE and NOTICE for details.
