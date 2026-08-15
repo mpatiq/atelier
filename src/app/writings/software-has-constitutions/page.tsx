@@ -12,6 +12,33 @@
 
 import Link from 'next/link';
 
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'Software Has Constitutions — Atelier',
+  description:
+    'An argument that software systems embody governing rules, constraints, permissions, and assumptions whether their designers acknowledge them or not.',
+  openGraph: {
+    title: 'Software Has Constitutions — Atelier',
+    description:
+      'An argument that software systems embody governing rules, constraints, permissions, and assumptions whether their designers acknowledge them or not.',
+    images: [
+      {
+        url: '/previews/atelier-open-graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Atelier',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Software Has Constitutions — Atelier',
+    description:
+      'An argument that software systems embody governing rules, constraints, permissions, and assumptions whether their designers acknowledge them or not.',
+    images: ['/previews/atelier-open-graph.png'],
+  },
+};
+
 export default function SoftwareHasConstitutionsPage() {
   return (
     <main className="min-h-screen bg-[#0b0f19] px-8 pb-32 pt-40 text-white">

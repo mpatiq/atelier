@@ -9,6 +9,33 @@
 
 import Link from 'next/link';
 
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'Building Before Permission — Atelier',
+  description:
+    'On building, experimenting, and pursuing consequential work before external permission or institutional validation arrives.',
+  openGraph: {
+    title: 'Building Before Permission — Atelier',
+    description:
+      'On building, experimenting, and pursuing consequential work before external permission or institutional validation arrives.',
+    images: [
+      {
+        url: '/previews/atelier-open-graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Atelier',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Building Before Permission — Atelier',
+    description:
+      'On building, experimenting, and pursuing consequential work before external permission or institutional validation arrives.',
+    images: ['/previews/atelier-open-graph.png'],
+  },
+};
+
 export default function BuildingBeforePermissionPage() {
   return (
     <main className="min-h-screen bg-[#0b0f19] px-8 pb-32 pt-40 text-white">

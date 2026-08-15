@@ -10,6 +10,33 @@
 
 import Link from 'next/link';
 
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'There Is No Neutral Trust System — Atelier',
+  description:
+    'An examination of how every trust system encodes assumptions about what should be preserved, recognized, and made consequential.',
+  openGraph: {
+    title: 'There Is No Neutral Trust System — Atelier',
+    description:
+      'An examination of how every trust system encodes assumptions about what should be preserved, recognized, and made consequential.',
+    images: [
+      {
+        url: '/previews/atelier-open-graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Atelier',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'There Is No Neutral Trust System — Atelier',
+    description:
+      'An examination of how every trust system encodes assumptions about what should be preserved, recognized, and made consequential.',
+    images: ['/previews/atelier-open-graph.png'],
+  },
+};
+
 export default function ThereIsNoNeutralTrustSystemPage() {
   return (
     <main className="min-h-screen bg-[#0b0f19] px-8 pb-32 pt-40 text-white">

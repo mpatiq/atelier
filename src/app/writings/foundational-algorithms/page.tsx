@@ -9,6 +9,33 @@
 
 import Link from 'next/link';
 
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'Foundational Algorithms — Atelier',
+  description:
+    'An exploration of foundational algorithms as structures for reasoning, computation, and the systems built upon them.',
+  openGraph: {
+    title: 'Foundational Algorithms — Atelier',
+    description:
+      'An exploration of foundational algorithms as structures for reasoning, computation, and the systems built upon them.',
+    images: [
+      {
+        url: '/previews/atelier-open-graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Atelier',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Foundational Algorithms — Atelier',
+    description:
+      'An exploration of foundational algorithms as structures for reasoning, computation, and the systems built upon them.',
+    images: ['/previews/atelier-open-graph.png'],
+  },
+};
+
 export default function FoundationalAlgorithmsPage() {
   return (
     <main className="min-h-screen bg-[#0b0f19] px-8 pb-32 pt-40 text-white">
