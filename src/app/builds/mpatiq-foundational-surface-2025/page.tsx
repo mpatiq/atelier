@@ -9,6 +9,13 @@
 
 import BuildPortal from '@/components/BuildPortal';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'MpatiQ — Foundational Surface (2025) — Atelier',
+  description:
+    'Earliest outward-facing architectural surface of MpatiQ and the beginning of its trust infrastructure direction.',
+};
 
 export default function MpatiQFoundationalPage() {
   return (

@@ -7,9 +7,15 @@
  *
  * ------------------------------------------------------------------------------
  */
-
+import type { Metadata } from 'next';
 import BuildPortal from '@/components/BuildPortal';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'MpatiQ - Atelier',
+  description:
+    'Trust infrastructure for preserving and transporting records of lived responsibility.',
+};
 
 export default function MpatiQPage() {
   return (

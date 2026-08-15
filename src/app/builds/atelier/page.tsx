@@ -10,6 +10,13 @@
 
 import BuildPortal from '@/components/BuildPortal';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Atelier',
+  description:
+    'Living archive for systems work, architectural notes, writings, and technical craft.',
+};
 
 export default function AtelierPage() {
   return (
