@@ -18,6 +18,27 @@ export const metadata: Metadata = {
   title: 'Atelier',
   description:
     'Systems, trust infrastructure, software craft, and architecture by Uru Onyemaobi.',
+  openGraph: {
+    title: 'Atelier',
+    description:
+      'Systems, trust infrastructure, software craft, and architecture by Uru Onyemaobi.',
+    images: [
+      {
+        url: '/previews/atelier-open-graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Atelier',
+      },
+    ],
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Atelier',
+    description:
+      'Systems, trust infrastructure, software craft, and architecture by Uru Onyemaobi.',
+    images: ['/previews/atelier-open-graph.png'],
+  },
 };
 
 export default function RootLayout({
