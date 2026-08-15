@@ -15,7 +15,33 @@ export const metadata: Metadata = {
   title: 'MpatiQ — Foundational Surface (2025) — Atelier',
   description:
     'Earliest outward-facing architectural surface of MpatiQ and the beginning of its trust infrastructure direction.',
+
+  openGraph: {
+    title: 'MpatiQ — Foundational Surface (2025) — Atelier',
+    description:
+      'Earliest outward-facing architectural surface of MpatiQ and the beginning of its trust infrastructure direction.',
+    images: [
+      {
+        url: '/previews/atelier-open-graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Atelier',
+      },
+    ],
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'MpatiQ — Foundational Surface (2025) — Atelier',
+    description:
+      'Earliest outward-facing architectural surface of MpatiQ and the beginning of its trust infrastructure direction.',
+    images: ['/previews/atelier-open-graph.png'],
+  },
 };
+
+// ---------------------------------------------------------------------------------
+// The core page
+// ---------------------------------------------------------------------------------
 
 export default function MpatiQFoundationalPage() {
   return (

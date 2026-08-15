@@ -12,9 +12,31 @@ import BuildPortal from '@/components/BuildPortal';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'MpatiQ - Atelier',
+  title: 'MpatiQ — Atelier',
   description:
-    'Trust infrastructure for preserving and transporting records of lived responsibility.',
+    'Trust infrastructure for preserving and transporting records of lived responsibility and witnessed conduct.',
+
+  openGraph: {
+    title: 'MpatiQ — Atelier',
+    description:
+      'Trust infrastructure for preserving and transporting records of lived responsibility and witnessed conduct.',
+    images: [
+      {
+        url: '/previews/atelier-open-graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Atelier',
+      },
+    ],
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'MpatiQ — Atelier',
+    description:
+      'Trust infrastructure for preserving and transporting records of lived responsibility and witnessed conduct.',
+    images: ['/previews/atelier-open-graph.png'],
+  },
 };
 
 export default function MpatiQPage() {
