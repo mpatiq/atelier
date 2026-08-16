@@ -28,6 +28,16 @@ const builds = [
   },
 
   {
+    name: 'Instant Checkout Link',
+    operationalState: 'ACTIVE DEVELOPMENT',
+    classification: 'INFRASTRUCTURE',
+    href: '/builds/instant-checkout-link',
+
+    description:
+      'Payment and checkout infrastructure designed for fast, direct transaction flow.',
+  },
+
+  {
     name: 'Atelier',
     operationalState: 'OPERATIONAL',
     classification: 'SYSTEM',
@@ -58,26 +68,6 @@ const builds = [
   },
 
   {
-    name: 'Nvert',
-    operationalState: 'RESEARCH',
-    classification: 'SYSTEM',
-    href: '/builds/nvert',
-
-    description:
-      'Learning and intellectual companionship system centered on meaningful knowledge exploration, and serendipitous discovery.',
-  },
-
-  {
-    name: 'Instant Checkout Link',
-    operationalState: 'ACTIVE DEVELOPMENT',
-    classification: 'INFRASTRUCTURE',
-    href: '/builds/instant-checkout-link',
-
-    description:
-      'Payment and checkout infrastructure designed for fast, direct transaction flow.',
-  },
-
-  {
     name: 'AshaGuard',
     operationalState: 'RESEARCH',
     classification: 'SYSTEM',
@@ -85,6 +75,16 @@ const builds = [
 
     description:
       'Trust-sensitive behavioral and caregiver insight system exploring early drift detection and reflective AI support.',
+  },
+
+  {
+    name: 'Nvert',
+    operationalState: 'RESEARCH',
+    classification: 'SYSTEM',
+    href: '/builds/nvert',
+
+    description:
+      'Learning and intellectual companionship system centered on meaningful knowledge exploration, and serendipitous discovery.',
   },
 
   {
