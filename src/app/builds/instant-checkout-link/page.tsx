@@ -58,7 +58,7 @@ export default function InstantCheckoutLink() {
         {/* Build Identity */}
         <div className="mt-10 mb-24">
           <p className="mb-4 text-sm uppercase tracking-[0.3em] text-neutral-500">
-            Infrastructure
+            Commerce System
           </p>
 
           <h1 className="font-light text-5xl tracking-[0.04em]">
@@ -66,23 +66,23 @@ export default function InstantCheckoutLink() {
           </h1>
 
           <p className="mt-8 text-lg max-w-3xl leading-relaxed text-neutral-400">
-            Payment-link infrastructure for generating and sharing instant
-            checkout experiences without custom storefronts.
+            A commerce system designed around fast, direct payment and checkout
+            flows.
           </p>
         </div>
 
         <BuildPortal
           title="Instant Checkout Link"
-          image="/previews/instant-checkout-link3.png"
-          surfaceHref="https://github.com/UruBuilds/instant-checkout-link"
+          image="/previews/instant-checkout-link-overview.png"
+          surfaceHref="https://github.com/mpatiq"
           operationalState="ACTIVE DEVELOPMENT"
           statusColor="bg-blue-400/70"
           classification="COMMERCE SYSTEM"
-          codeAccess="SOURCE CODE AVAILABLE"
+          codeAccess="PRIVATE PROPRIETARY"
           actions={[
             {
-              label: 'Codebase',
-              href: 'https://github.com/UruBuilds/instant-checkout-link',
+              label: 'Organization',
+              href: 'https://github.com/mpatiq',
             },
           ]}
         />
@@ -104,10 +104,8 @@ export default function InstantCheckoutLink() {
             </p>
 
             <p className="leading-relaxed">
-              Rather than requiring a custom storefront or complex setup, the
-              system centers the checkout experience itself, allowing products
-              and services to become directly purchasable through shareable
-              payment surfaces.
+              The system is designed around making payment and checkout flows
+              direct, portable, and simple to use.
             </p>
           </div>
         </section>
@@ -214,17 +212,12 @@ export default function InstantCheckoutLink() {
             {/* Systems */}
             <div className="space-y-2">
               <p>Systems Design</p>
-              <p>Payments Architecture</p>
+              <p>Payments Integration</p>
             </div>
 
             {/* Research & Analysis */}
             <div className="mt-10 space-y-2">
               <p>Research & Analysis</p>
-            </div>
-
-            <div className="mt-10 space-y-2">
-              <p>Payments Infrastructure</p>
-              <p>Financial Systems Design</p>
             </div>
 
             {/* Engineering */}
