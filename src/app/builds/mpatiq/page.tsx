@@ -14,12 +14,12 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'MpatiQ — Atelier',
   description:
-    'Trust infrastructure for preserving and transporting records of lived responsibility and witnessed conduct.',
+    'Trust infrastructure for building, preserving, and transporting person-owned contextual records of work and responsibility.',
 
   openGraph: {
     title: 'MpatiQ — Atelier',
     description:
-      'Trust infrastructure for preserving and transporting records of lived responsibility and witnessed conduct.',
+      'Trust infrastructure for building, preserving, and transporting person-owned contextual records of work and responsibility.',
     images: [
       {
         url: '/previews/atelier-open-graph.png',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'MpatiQ — Atelier',
     description:
-      'Trust infrastructure for preserving and transporting records of lived responsibility and witnessed conduct.',
+      'Trust infrastructure for building, preserving, and transporting person-owned contextual records of work and responsibility.',
     images: ['/previews/atelier-open-graph.png'],
   },
 };
