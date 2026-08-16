@@ -308,10 +308,10 @@ export default function AtelierPage() {
             </p>
 
             <Link
-              href="/builds/mpatiq"
+              href="/builds/instant-checkout-link"
               className="mt-4 inline-flex items-center gap-2 text-lg text-white transition-opacity hover:opacity-70"
             >
-              ← MpatiQ
+              ← Instant Checkout Link
             </Link>
           </div>
 

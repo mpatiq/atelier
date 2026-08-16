@@ -324,10 +324,10 @@ export default function MpatiQConstitutionalStateMachine() {
             </p>
 
             <Link
-              href="/builds/nvert"
+              href="/builds/ashaguard"
               className="mt-4 inline-flex items-center gap-2 text-lg text-white transition-opacity hover:opacity-70"
             >
-              Nvert →
+              AshaGuard →
             </Link>
           </div>
         </footer>

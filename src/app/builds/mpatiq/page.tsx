@@ -63,9 +63,9 @@ export default function MpatiQPage() {
           <h1 className="font-light text-5xl tracking-[0.04em]">MpatiQ</h1>
 
           <p className="mt-8 text-lg max-w-3xl leading-relaxed text-neutral-400">
-            Trust infrastructure for preserving and transporting records of
-            lived responsibility and witnessed conduct across jobs, communities,
-            and platforms.
+            Trust infrastructure for building, preserving, and transporting
+            contextual records of lived work and responsibility across jobs,
+            communities, and platforms.
           </p>
         </div>
 
@@ -111,9 +111,9 @@ export default function MpatiQPage() {
             </p>
 
             <p className="leading-relaxed">
-              MpatiQ explores how lived responsibility and witnessed conduct can
-              become transportable without reducing people to scores, rankings,
-              follower counts, or engagement metrics.
+              MpatiQ provides a way for contextual records of lived work and
+              responsibility to become portable without reducing people to
+              scores, rankings, follower counts, or engagement metrics.
             </p>
           </div>
         </section>
@@ -127,7 +127,7 @@ export default function MpatiQPage() {
           <div className="space-y-4 text-neutral-300">
             <p>Trust is infrastructure.</p>
             <p>Structure without reduction.</p>
-            <p>Witness over aggregation.</p>
+            <p>Ownership before validation.</p>
             <p>Context over compression.</p>
             <p>Continuity over performance.</p>
             <p>History should be preserved, not optimized.</p>
@@ -142,6 +142,42 @@ export default function MpatiQPage() {
           </p>
 
           <div className="space-y-10">
+            {/* Claims and Trust Records */}
+            <div>
+              <h3 className="text-lg text-neutral-200">
+                Claims and Trust Records
+              </h3>
+
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
+                How claims form the foundational units of a person-owned
+                contextual record.
+              </p>
+            </div>
+
+            {/* Trust Window Architecture */}
+            <div>
+              <h3 className="text-lg text-neutral-200">
+                Trust Window Architecture
+              </h3>
+
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
+                How lived work and responsibility are preserved across ongoing
+                and completed windows.
+              </p>
+            </div>
+
+            {/* Artifact Architecture */}
+            <div>
+              <h3 className="text-lg text-neutral-200">
+                Artifact Architecture
+              </h3>
+
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
+                How evidence is anchored to the periods of work in which it
+                belongs.
+              </p>
+            </div>
+
             {/* Constitutional Trust State Machine */}
             <div>
               <h3 className="text-lg text-neutral-200">
@@ -153,48 +189,6 @@ export default function MpatiQPage() {
               </p>
             </div>
 
-            {/* Claims and Reflection Infrastructure */}
-            <div>
-              <h3 className="text-lg text-neutral-200">
-                Claims and Reflection Infrastructure
-              </h3>
-
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                How claims become witnessed records of conduct.
-              </p>
-            </div>
-
-            {/* Trust Domains and Passports */}
-            <div>
-              <h3 className="text-lg text-neutral-200">Trust Domains</h3>
-
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Context-specific trust representation without scoring.
-              </p>
-            </div>
-
-            {/* Witness Reflection Architecture */}
-            <div>
-              <h3 className="text-lg text-neutral-200">
-                Witness Reflection Architecture
-              </h3>
-
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Structured observation anchored to lived experience.
-              </p>
-            </div>
-
-            {/* Dormancy and Continuity Preservation */}
-            <div>
-              <h3 className="text-neutral-200 text-lg">
-                Dormancy and Continuity Preservation
-              </h3>
-
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Preserving history without forcing perpetual activity.
-              </p>
-            </div>
-
             {/* Trust Portability Across Contexts */}
             <div>
               <h3 className="text-neutral-200 text-lg">
@@ -202,8 +196,20 @@ export default function MpatiQPage() {
               </h3>
 
               <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
-                Helping trust travel beyond the systems and environments that
-                created it.
+                How records can travel beyond the systems and environments in
+                which they were created.
+              </p>
+            </div>
+
+            {/* Witness Reflection Architecture */}
+            <div>
+              <h3 className="text-neutral-200 text-lg">
+                Witness Reflection Architecture
+              </h3>
+
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-500">
+                How firsthand witnesses can add context to periods of lived
+                responsibility.
               </p>
             </div>
           </div>
@@ -333,10 +339,10 @@ export default function MpatiQPage() {
           </p>
           {/* Link to next build */}
           <Link
-            href="/builds/atelier"
+            href="/builds/instant-checkout-link"
             className="mt-5 inline-flex items-center gap-3 text-2xl font-light transition-opacity duration-200 hover:opacity-70"
           >
-            Atelier
+            Instant Checkout Link
             <span aria-hidden>→</span>
           </Link>
         </footer>

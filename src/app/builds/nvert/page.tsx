@@ -310,10 +310,10 @@ export default function Nvert() {
             </p>
 
             <Link
-              href="/builds/mpatiq-constitutional-state-machine"
+              href="/builds/ashaguard"
               className="mt-4 inline-flex items-center gap-2 text-lg text-white transition-opacity hover:opacity-70"
             >
-              ← MpatiQ Constitutional State Machine
+              ← AshaGuard
             </Link>
           </div>
 
@@ -323,10 +323,10 @@ export default function Nvert() {
             </p>
 
             <Link
-              href="/builds/instant-checkout-link"
+              href="/builds/e-coli-experiments"
               className="mt-4 inline-flex items-center gap-2 text-lg text-white transition-opacity hover:opacity-70"
             >
-              Instant Checkout Link →
+              E.coli Experiments →
             </Link>
           </div>
         </footer>

@@ -319,10 +319,10 @@ export default function AshaGuardPage() {
             </p>
 
             <Link
-              href="/builds/instant-checkout-link"
+              href="/builds/mpatiq-constitutional-state-machine"
               className="mt-4 inline-flex items-center gap-2 text-lg text-white transition-opacity hover:opacity-70"
             >
-              ← Instant Checkout Link
+              ← MpatiQ Constitutional State Machine
             </Link>
           </div>
 
@@ -332,10 +332,10 @@ export default function AshaGuardPage() {
             </p>
 
             <Link
-              href="/builds/e-coli-experiments"
+              href="/builds/nvert"
               className="mt-4 inline-flex items-center gap-2 text-lg text-white transition-opacity hover:opacity-70"
             >
-              E.coli Experiments →
+              Nvert →
             </Link>
           </div>
         </footer>

@@ -330,10 +330,10 @@ export default function InstantCheckoutLink() {
             </p>
 
             <Link
-              href="/builds/nvert"
+              href="/builds/mpatiq"
               className="mt-4 inline-flex items-center gap-2 text-lg text-white transition-opacity hover:opacity-70"
             >
-              ← Nvert
+              ← MpatiQ
             </Link>
           </div>
 
@@ -343,10 +343,10 @@ export default function InstantCheckoutLink() {
             </p>
 
             <Link
-              href="/builds/ashaguard"
+              href="/builds/atelier"
               className="mt-4 inline-flex items-center gap-2 text-lg text-white transition-opacity hover:opacity-70"
             >
-              AshaGuard →
+              Atelier →
             </Link>
           </div>
         </footer>

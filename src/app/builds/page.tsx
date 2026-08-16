@@ -24,7 +24,7 @@ const builds = [
     href: '/builds/mpatiq',
 
     description:
-      'Trust infrastructure for preserving and transporting records of responsibility and witnessed conduct.',
+      'Trust infrastructure for building, preserving, and transporting person-owned contextual records of work and responsibility.',
   },
 
   {
