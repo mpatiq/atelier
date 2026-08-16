@@ -85,7 +85,7 @@ export default function MpatiQConstitutionalStateMachine() {
               <div>
                 <h3 className="text-neutral-200">UNREFLECTED</h3>
                 <p className="mt-2 text-sm leading-relaxed text-neutral-500">
-                  A complete trust state without reflections. Private by
+                  A complete trust state prior to firsthand reflection. Private by
                   default.
                 </p>
               </div>
@@ -103,7 +103,8 @@ export default function MpatiQConstitutionalStateMachine() {
               <div>
                 <h3 className="text-neutral-200">REFLECTED_STABLE</h3>
                 <p className="mt-2 text-sm leading-relaxed text-neutral-500">
-                  A state requiring multiple aligned reflections.
+                  Recognition supported by sustained or contextually broader
+                  witnessed conduct.
                 </p>
               </div>
 
